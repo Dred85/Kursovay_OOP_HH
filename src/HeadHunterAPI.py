@@ -12,14 +12,14 @@ class Parser(ABC):
         pass
 
 
-class HH(Parser):
+class HeadHunterAPI(Parser, file_worker):
     """
     Класс для работы с API HeadHunter
     """
 
-    def __init__(self, file_worker):
+    def __init__(self):
         self.url = 'https://api.hh.ru/vacancies'
-        self.headers = {'User-Agent': 'HH-User-Agent'}
+        self.headers = {'User-Agent': 'HeadHunterAPI-User-Agent'}
         self.params = {'text': '', 'page': 0, 'per_page': 100}
         self.vacancies = []
         super().__init__(file_worker)
@@ -34,6 +34,6 @@ class HH(Parser):
 
 
 if __name__ == '__main__':
-    hh = HH()
+    hh = HeadHunterAPI()
     hh.load_vacancies('python')
     print(hh.vacancies)
