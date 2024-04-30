@@ -1,6 +1,6 @@
 from pprint import pprint
 
-from src.getting_and_working_with_vacancies import HHAPI
+from src.HeadHunterAPI import HeadHunterAPI
 from src.add_vacancies_in_json import WorkWithJSON
 
 
@@ -10,7 +10,7 @@ def main():
     quantity_profession = int(input("Какое количество вакансий с наибольшей зарплатой вы хотите увидеть? "))
 
     # Указываю ссылку на API HH
-    hh_url = HHAPI('https://api.hh.ru/vacancies')
+    hh_url = HeadHunterAPI('https://api.hh.ru/vacancies')
 
     # Получаю вакансии и сортирую их
     vacancies = hh_url.get_info(profession)

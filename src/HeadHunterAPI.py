@@ -1,39 +1,38 @@
 import requests
 from abc import ABC, abstractmethod
 
+from src.Vacancy import Vacancy
 
-class Parser(ABC):
-    """
-    Абстрактный базовый класс для парсинга вакансий
-    """
+
+class HeadHunterAPIAbstract(ABC):
+    """Абстрактный класс для получения API с сайта"""
 
     @abstractmethod
-    def load_vacancies(self, keyword):
+    def get_info(self, profession):
+        """Абстрактный метод для получения API с сайта и преобразования его в json-объекта"""
         pass
 
 
-class HeadHunterAPI(Parser, file_worker):
-    """
-    Класс для работы с API HeadHunter
-    """
+class HeadHunterAPI(HeadHunterAPIAbstract):
+    """Класс для получения API с сайта по указанной вакансии. Дальше переношу список этих вакансий в класс
+    Vacancy"""
 
-    def __init__(self):
-        self.url = 'https://api.hh.ru/vacancies'
-        self.headers = {'User-Agent': 'HeadHunterAPI-User-Agent'}
-        self.params = {'text': '', 'page': 0, 'per_page': 100}
-        self.vacancies = []
-        super().__init__(file_worker)
+    def __init__(self, url):
+        self.url = url
 
-    def load_vacancies(self, keyword):
-        self.params['text'] = keyword
-        while self.params.get('page') != 20:
-            response = requests.get(self.url, headers=self.headers, params=self.params)
-            vacancies = response.json()['items']
-            self.vacancies.extend(vacancies)
-            self.params['page'] += 1
-
-
-if __name__ == '__main__':
-    hh = HeadHunterAPI()
-    hh.load_vacancies('python')
-    print(hh.vacancies)
+    def get_info(self, profession):
+        """Метод для получения API с сайта и перенос профессий в класс Vacancy"""
+        params = {
+            'text': profession,
+            'page': 0,
+            'per_page': 100
+        }
+        response = requests.get(url=self.url, params=params)
+        return [
+            Vacancy(name=info['name'],
+                    link_to_vacancy=info['alternate_url'],
+                    salary_from=(info.get('salary', {}) or {}).get('from', 0),
+                    salary_to=(info.get('salary', {}) or {}).get('to', 0),
+                    requirements=info['snippet']['requirement'])
+            for info in response.json()['items']
+        ]
