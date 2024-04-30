@@ -31,13 +31,13 @@ class WorkWithJSON(WorkWithJSONAbstract):
     @staticmethod
     def add_json(vacancies):
         """Метод для добавления вакансий в файл JSON"""
-        with open('vacancies.json', mode='w', encoding='utf-8') as vacancies_json:
+        with open('data/vacancies.json', mode='w', encoding='utf-8') as vacancies_json:
             json.dump([v.to_JSON() for v in vacancies], vacancies_json, indent=4, ensure_ascii=False)
 
     @classmethod
     def get_info_json_name(cls, key_word):
         """Метод для фильтрации вакансий по ключевому слову в названии"""
-        with open('vacancies.json', 'r', encoding='utf-8') as find_name_json:
+        with open('data/vacancies.json', 'r', encoding='utf-8') as find_name_json:
             find_name = json.load(find_name_json)
             for key in find_name:
                 if key_word in key['name'].lower():
@@ -46,7 +46,7 @@ class WorkWithJSON(WorkWithJSONAbstract):
     @classmethod
     def get_info_json_requirements(cls, key_word):
         """Метод для фильтрации вакансий по ключевому слову в требованиях"""
-        with open('vacancies.json', 'r', encoding='utf-8') as find_requirements_json:
+        with open('data/vacancies.json', 'r', encoding='utf-8') as find_requirements_json:
             find_requirements = json.load(find_requirements_json)
             for key in find_requirements:
                 if key['requirements']:
