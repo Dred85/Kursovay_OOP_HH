@@ -5,37 +5,31 @@ from src.vacancy import Vacancy
 
 
 class HeadHunterAPIAbstract(ABC):
-    """Абстрактный класс для получения API с сайта"""
+    """Абстрактный Класс для работы с API HeadHunter"""
 
     @abstractmethod
-    def get_info(self, profession):
-        """Абстрактный метод для получения API с сайта и преобразования его в json-объекта"""
+    def load_vacancies(self, profession):
+        """Абстрактный метод для получения и сохранения данных с сайта"""
         pass
 
 
 class HeadHunterAPI(HeadHunterAPIAbstract):
-    """Класс для получения API с сайта по указанной вакансии. Дальше переношу список этих вакансий в класс
-    Vacancy"""
+    """Класс для работы с API HeadHunter по указанной вакансии."""
 
-    def __init__(self, url):
-        self.url = url
+    def __init__(self):
+        self.url = 'https://api.hh.ru/vacancies'
+        self.headers = {'User-Agent': 'HH-User-Agent'}
+        self.params = {'text': '', 'page': 0, 'per_page': 100}
+        self.vacancies = []
+        super().__init__()
 
-    def get_info(self, profession):
-        """Метод для получения API с сайта и перенос профессий в класс Vacancy"""
-        params = {
-            'text': profession,
-            'page': 0,
-            'per_page': 100
-        }
-        # self.__params = {
-        #     'text': profession,
-        #     'page': 0,
-        #     'per_page': 100,
-        #     'order_by': 'salary_desc',
-        #     'host': 'hh.ru',
-        #     'locale': 'RU'
-        # }
-        response = requests.get(url=self.url, params=params)
+    def load_vacancies(self, keyword):
+        self.params['text'] = keyword
+        while self.params.get('page') !=20 :
+            response = requests.get(self.url, headers=self.headers, params=self.params)
+            vacancies = response.json()['items']
+            self.vacancies.extend(vacancies)
+            self.params['page'] += 1
         return [
             Vacancy(name=info['name'],
                     link_to_vacancy=info['alternate_url'],
@@ -44,3 +38,13 @@ class HeadHunterAPI(HeadHunterAPIAbstract):
                     requirements=info['snippet']['requirement'])
             for info in response.json()['items']
         ]
+
+if __name__ == '__main__':
+    hh = HeadHunterAPI()
+    hh.load_vacancies('java')
+    # print()
+    print(hh.vacancies[:2])
+
+
+
+

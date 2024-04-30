@@ -47,7 +47,7 @@ class Vacancy(VacanciesAbstract):
 
     def __str__(self):
         """Метод вывода информации по вакансиям"""
-        return f'{self.name} - {self.link_to_vacancy}, {self.salary_from} - {self.salary_to}: {self.requirements}'
+        return f'Наименование вакансии: {self.name}\nСсылка: {self.link_to_vacancy}\nЗарплата от {self.salary_from} до {self.salary_to}\nТребования: {self.requirements}\n'
 
     def __repr__(self):
         """Метод вывода информации по вакансиям"""
