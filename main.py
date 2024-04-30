@@ -1,7 +1,7 @@
 from pprint import pprint
 
-from src.HeadHunterAPI import HeadHunterAPI
-from src.add_vacancies_in_json import WorkWithJSON
+from src.headhunterapi import HeadHunterAPI
+from src.jsonsaver import JSONSaver
 
 
 def main():
@@ -17,7 +17,7 @@ def main():
     vacancies_sorted = sorted(vacancies, reverse=True)
 
     # Записываю все вакансии в JSON файл
-    WorkWithJSON.add_json(vacancies)
+    JSONSaver.add_json(vacancies)
 
     # Спрашиваю у пользователя вывести ли топ вакансий в количестве которое он указал?
     answer_1 = input('Хотите увидеть вакансии с наибольшей зарплатой (Да/Нет)? ')
@@ -33,13 +33,13 @@ def main():
         if answer_3.lower() == 'н':
             # Спрашиваю у пользователя название вакансии для сортировки
             answer_4 = input('Введите ключевое слово в названии вакансии: ')
-            WorkWithJSON.get_info_json_name(answer_4)
+            JSONSaver.get_info_json_name(answer_4)
         elif answer_3 == 'т':
             answer_5 = input('Введите ключевое слово в описании вакансии: ')
-            WorkWithJSON.get_info_json_requirements(answer_5)
+            JSONSaver.get_info_json_requirements(answer_5)
     answer_6 = input('Введите диапазон зарплат через -(10000-100000): ')
     answer_6_split = answer_6.split('-')
-    for salary in WorkWithJSON.filtered_information:
+    for salary in JSONSaver.filtered_information:
         if int(salary['salary_from']) > int(answer_6_split[0]):
             print(f'{salary['name']}, {salary['link_to_vacancy']}, {salary['salary_from']}, {salary['salary_to']}, '
                   f'{salary['requirements']}')

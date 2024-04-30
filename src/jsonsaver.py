@@ -7,7 +7,7 @@ from config import ROOT_DIR
 path_to_file = os.path.join(ROOT_DIR, 'data', 'vacancies.json')
 
 
-class WorkWithJSONAbstract(ABC):
+class JSONSaverAbstract(ABC):
     """Абстрактный класс для добавления вакансий в JSON файл"""
 
     @staticmethod
@@ -29,7 +29,7 @@ class WorkWithJSONAbstract(ABC):
         pass
 
 
-class WorkWithJSON(WorkWithJSONAbstract):
+class JSONSaver(JSONSaverAbstract):
     """Класс для добавления вакансий в JSON файл"""
 
     filtered_information = []

@@ -1,7 +1,7 @@
 import requests
 from abc import ABC, abstractmethod
 
-from src.Vacancy import Vacancy
+from src.vacancy import Vacancy
 
 
 class HeadHunterAPIAbstract(ABC):
