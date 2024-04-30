@@ -1,5 +1,3 @@
-# from pprint import pprint
-
 from src.headhunterapi import HeadHunterAPI
 from src.jsonsaver import JSONSaver
 

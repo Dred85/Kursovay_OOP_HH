@@ -30,8 +30,11 @@ class HeadHunterAPI(HeadHunterAPIAbstract):
             vacancies = response.json()['items']
             self.vacancies.extend(vacancies)
             self.params['page'] += 1
+
+        # return response.json()['items']
         return [
-            Vacancy(name=info['name'],
+            Vacancy(id=info['id'],
+                    name=info['name'],
                     link_to_vacancy=info['alternate_url'],
                     salary_from=(info.get('salary', {}) or {}).get('from', 0),
                     salary_to=(info.get('salary', {}) or {}).get('to', 0),
