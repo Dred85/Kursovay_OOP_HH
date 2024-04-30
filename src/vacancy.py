@@ -31,9 +31,10 @@ class Vacancy(VacanciesAbstract):
     salary_from начальная зарплата
     salary_to - максимальная зарплата
     requirements - требования к вакансии
+    published_at - дата публикации вакансии
     Так же если зарплата не указана то вывожу об этом сообщение"""
 
-    def __init__(self, id, name, link_to_vacancy, salary_from, salary_to, requirements):
+    def __init__(self, id, name, link_to_vacancy, salary_from, salary_to, requirements, published_at):
         self.id = id
         self.name = name
         self.link_to_vacancy = link_to_vacancy
@@ -46,14 +47,21 @@ class Vacancy(VacanciesAbstract):
         else:
             self.salary_to = 0
         self.requirements = requirements
+        self.published_at = published_at
 
     def __str__(self):
         """Метод вывода информации по вакансиям"""
-        return f'ID: {self.id}\nНаименование вакансии: {self.name}\nСсылка: {self.link_to_vacancy}\nЗарплата от {self.salary_from} до {self.salary_to}\nТребования: {self.requirements}\n'
+        return f"""ID: {self.id}
+    Наименование вакансии: {self.name}
+    Ссылка: {self.link_to_vacancy}
+    Зарплата от {self.salary_from} до {self.salary_to}
+    Требования: {self.requirements}
+Дата публикации: {self.published_at}\n"""
 
     def __repr__(self):
         """Метод вывода информации по вакансиям"""
-        return f'{self.__class__.__name__}({self.id}, {self.name}, {self.link_to_vacancy}, {self.salary_from} - {self.salary_to}, {self.requirements})'
+        return f'{self.__class__.__name__}({self.id}, {self.name}, {self.link_to_vacancy}, {self.salary_from} - \
+{self.salary_to}, {self.requirements}, {self.published_at})'
 
     def __lt__(self, other):
         """Метод позволяет использовать оператор меньше (<) для сравнения объектов этого класса"""
@@ -67,5 +75,6 @@ class Vacancy(VacanciesAbstract):
             'link_to_vacancy': self.link_to_vacancy,
             'salary_from': self.salary_from,
             'salary_to': self.salary_to,
-            'requirements': self.requirements
+            'requirements': self.requirements,
+            'published_at': self.published_at,
         }

@@ -25,7 +25,7 @@ class HeadHunterAPI(HeadHunterAPIAbstract):
 
     def load_vacancies(self, keyword):
         self.params['text'] = keyword
-        while self.params.get('page') !=20 :
+        while self.params.get('page') != 20:
             response = requests.get(self.url, headers=self.headers, params=self.params)
             vacancies = response.json()['items']
             self.vacancies.extend(vacancies)
@@ -38,16 +38,14 @@ class HeadHunterAPI(HeadHunterAPIAbstract):
                     link_to_vacancy=info['alternate_url'],
                     salary_from=(info.get('salary', {}) or {}).get('from', 0),
                     salary_to=(info.get('salary', {}) or {}).get('to', 0),
-                    requirements=info['snippet']['requirement'])
+                    requirements=info['snippet']['requirement'],
+                    published_at=info['published_at'])
             for info in response.json()['items']
         ]
+
 
 if __name__ == '__main__':
     hh = HeadHunterAPI()
     hh.load_vacancies('java')
     # print()
     print(hh.vacancies[:2])
-
-
-
-
