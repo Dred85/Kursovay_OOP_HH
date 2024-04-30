@@ -27,6 +27,14 @@ class HeadHunterAPI(HeadHunterAPIAbstract):
             'page': 0,
             'per_page': 100
         }
+        # self.__params = {
+        #     'text': profession,
+        #     'page': 0,
+        #     'per_page': 100,
+        #     'order_by': 'salary_desc',
+        #     'host': 'hh.ru',
+        #     'locale': 'RU'
+        # }
         response = requests.get(url=self.url, params=params)
         return [
             Vacancy(name=info['name'],

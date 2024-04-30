@@ -18,7 +18,7 @@ class VacanciesAbstract(ABC):
         pass
 
     @abstractmethod
-    def to_JSON(self):
+    def to_json(self):
         """Абстрактный метод, насколько я понял, для конвертации информации которая будет добавлена в файл JSON"""
         pass
 
@@ -54,9 +54,10 @@ class Vacancy(VacanciesAbstract):
         return f'{self.name} - {self.link_to_vacancy}, {self.salary_from} - {self.salary_to}: {self.requirements}'
 
     def __lt__(self, other):
+        """Метод позволяет использовать оператор меньше чем (<) для сравнения объектов этого класса"""
         return self.salary_to < other.salary_to
 
-    def to_JSON(self):
+    def to_json(self):
         """Метод для подготовки информации к записи в файл JSON"""
         return {
             'name': self.name,
