@@ -46,6 +46,6 @@ class HeadHunterAPI(HeadHunterAPIAbstract):
 
 if __name__ == '__main__':
     hh = HeadHunterAPI()
-    hh.load_vacancies('java')
+    hh.load_vacancies('Python')
     # print()
     print(hh.vacancies[:2])

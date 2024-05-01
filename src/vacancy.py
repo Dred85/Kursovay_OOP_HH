@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 
 
+
 class VacanciesAbstract(ABC):
     """Абстрактный класс для работы с вакансиями"""
 
@@ -78,3 +79,6 @@ class Vacancy(VacanciesAbstract):
             'requirements': self.requirements,
             'published_at': self.published_at,
         }
+
+
+

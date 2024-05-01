@@ -1,8 +1,8 @@
 import json
 from abc import ABC, abstractmethod
 
-from config import  path_to_file
-
+from config import path_to_file
+from datetime import datetime
 
 class JSONSaverAbstract(ABC):
     """Абстрактный класс для добавления вакансий в JSON файл"""
@@ -62,7 +62,6 @@ class JSONSaver(JSONSaverAbstract):
         with open(path_to_file, mode='a', encoding='utf-8') as vacancies_json:
             json.dump([v.to_json() for v in vacancies], vacancies_json, indent=4, ensure_ascii=False)
 
-
     @staticmethod
     def del_json(vacancies):
         """Метод для удаления вакансий из файла JSON"""
@@ -88,3 +87,21 @@ class JSONSaver(JSONSaverAbstract):
         print('А теперь записываем итоговый файл')
         with open('personal.json', 'w', encoding='utf8') as outfile:
             json.dump(data, outfile, ensure_ascii=False, indent=4)
+
+    # @classmethod
+    # def sorted_date_json(cls):
+    #     """Метод для фильтрации вакансий по ключевому слову в требованиях"""
+    #     with open(path_to_file, 'r', encoding='utf-8') as f:
+    #         sorted_date_json = json.load(f)
+    #
+    #         for v in sorted_date_json:
+    #             date_time_str = v['published_at']
+    #             date_time_obj = datetime.fromisoformat(date_time_str)
+    #             sorted_date_vacansies = sorted(v, key=lambda x: datetime.strptime(date_time_obj), "%Y-%m-%dT%H:%M:%S.%fZ"),
+    #                                                        reverse=True)
+    #     return sorted_date_vacansies
+
+
+
+
+
