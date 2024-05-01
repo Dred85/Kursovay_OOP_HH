@@ -47,7 +47,7 @@ def user_interaction():
         q_filter_vacansies_name_or_requirements = input('Фильтруем по названию или по требованиям (Н/Т)? ')
         if q_filter_vacansies_name_or_requirements.lower() == 'н':
             # Спрашиваю у пользователя название вакансии для сортировки
-            key_word_vacansies = input('Введите ключевое слово в названии вакансии: ')
+            key_word_vacansies = input('Введите ключевое слово в наименовании вакансии: ')
             list_name_sorted_vacancies = Vacancy.get_info_json_requirements(list_vacancies, key_word_vacansies)
             for v in list_name_sorted_vacancies:
                 print(v)
