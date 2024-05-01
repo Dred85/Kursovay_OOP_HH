@@ -56,24 +56,29 @@ def user_interaction():
             # Спрашиваю у пользователя название вакансии для сортировки
             key_word_vacansies = input('Введите ключевое слово в названии вакансии: ')
             Vacancy.get_info_json_name(key_word_vacansies)
-        elif filter_vacansies_name_or_requirements == 'т':
+
+        else:
             key_word_requirements = input('Введите ключевое слово в описании вакансии: ')
             Vacancy.get_info_json_requirements(key_word_requirements)
+        salary = input("Введите диапазон зарплат через '-' (100000 - 150000): ")
+        salary_split = salary.split('-')
 
-    salary = input("Введите диапазон зарплат через '-' (100000 - 150000): ")
-    salary_split = salary.split('-')
+        # Вывожу отсортированные вакансии в том количестве и критериям которые попросил пользователь
+        for v in Vacancy.filtered_information:
+            if int(v['salary_from']) > int(salary_split[0]):
+                print(f'Отфильтрованные вакансии по заданным критериям:')
 
-    # Вывожу отсортированные вакансии в том количестве и критериям которые попросил пользователь
-    for v in Vacancy.filtered_information:
-        if int(v['salary_from']) > int(salary_split[0]):
-            print(f'Отфильтрованные вакансии по заданным критериям:')
-
-            print(f"""ID: {v['ID']}
+                print(f"""ID: {v['ID']}
     Наименование вакансии: {v['name']}
     Ссылка: {v['link_to_vacancy']}
     Зарплата от {v['salary_from']} до {v['salary_to']}
     Требования: {v['requirements']}
 Дата публикации: {v['published_at']}\n""")
+
+    else:
+        print('До скорых встреч')
+
+
 
 
 if __name__ == "__main__":
