@@ -30,42 +30,28 @@ def user_interaction():
 
         for v in date_sorted_vacancies:
             print(v)
+
+        quantity_profession = int(input("Укажите сколько отсортированных по времени вакансий оставить для просмотра? "))
+
+        for v in date_sorted_vacancies[:quantity_profession]:
+            print(v)
+
+        q_sort_vacansies_salary = input('Отсортировать вакансии по зарплате - Да, выйти из программы - В)? ')
+        if q_sort_vacansies_salary.lower() == 'да':
+            sort_vacansies_salary = sorted(date_sorted_vacancies[:quantity_profession], key=lambda x: x.salary_from,
+                                           reverse=True)
+            for v in sort_vacansies_salary:
+                print(v)
+        else:
+            print("До скорых встреч!")
+            return
     else:
-        # Выводим неотсортированные по дате публикации вакансии ближайшей к нашей дате из файла json
-        for v in list_vacancies:
-            print(v)
-
-
-    quantity_profession = int(input("Укажите сколько отсортированных по времени вакансий оставить для просмотра? "))
-
-    for v in date_sorted_vacancies[:quantity_profession]:
-        print(v)
-
-    q_sort_vacansies_salary = input('Отсортировать вакансий по зарплате (Да/Нет)? ')
-    if q_sort_vacansies_salary.lower() == 'да':
-        sort_vacansies_salary = sorted(list_vacancies, key=lambda x: x.salary_from, reverse=True)
-        for v in sort_vacansies_salary:
-            print(v)
-
-
-
-
-
-    # # Спрашиваю у пользователя вывести ли топ вакансий по зарплате в количестве которое он указал?
-    # sort_vacansies_pay = input('Хотите увидеть топ вакансий по зарплате (Да/Нет)? ')
-    # if sort_vacansies_pay.lower() == 'да':
-    #     # Вывожу отсортированные по зарплате вакансии в том количестве которое попросил пользователь
-    #     vacancies_sorted = sorted(list_vacancies, reverse=True)
-    #
-    #     for v in vacancies_sorted[:quantity_profession]:
-    #         print(v)
-    # else:
-    #     print(f'Первые {quantity_profession} вакансий из всего списка вакансий:')
-    #     for v in list_vacancies[:quantity_profession]:
-    #         print(v)
+        # Выходим из программы
+        print("До скорых встреч!")
+        return
 
     # Спрашиваю у пользователя хочет ли он отфильтровать вакансии по названию или по требованиям
-    filter_vacansies_name = input('Отфильтровать изначальный список вакансии по названию или по требованиям(Да/Нет)? ')
+    filter_vacansies_name = input('Отфильтровать изначальный список вакансий по названию или по требованиям(Да/Нет)? ')
     if filter_vacansies_name.lower() == 'да':
         # Спрашиваю у пользователя по чему конкретно будем сортировать
         filter_vacansies_name_or_requirements = input('Фильтруем по названию или по требованиям (Н/Т)? ')
@@ -85,12 +71,14 @@ def user_interaction():
         if int(v['salary_from']) > int(salary_split[0]):
 
             print(f'Отфильтрованные вакансии по заданным критериям:')
-            print(f"""ID: {v['ID']}
-    Наименование вакансии: {v['name']}
-    Ссылка: {v['link_to_vacancy']}
-    Зарплата от {v['salary_from']} до {v['salary_to']}
-    Требования: {v['requirements']}
-Дата публикации: {v['published_at']}\n""")
+
+            print(v)
+#             print(f"""ID: {v['ID']}
+#     Наименование вакансии: {v['name']}
+#     Ссылка: {v['link_to_vacancy']}
+#     Зарплата от {v['salary_from']} до {v['salary_to']}
+#     Требования: {v['requirements']}
+# Дата публикации: {v['published_at']}\n""")
 
 
 if __name__ == "__main__":
