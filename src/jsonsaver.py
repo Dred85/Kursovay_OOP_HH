@@ -1,10 +1,7 @@
-import os
 import json
 from abc import ABC, abstractmethod
 
-from config import ROOT_DIR
-
-path_to_file = os.path.join(ROOT_DIR, 'data', 'vacancies.json')
+from config import  path_to_file
 
 
 class JSONSaverAbstract(ABC):
