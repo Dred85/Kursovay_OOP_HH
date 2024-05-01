@@ -93,20 +93,30 @@ class Vacancy(VacanciesAbstract):
         return date_sorted_vacancies
 
     @classmethod
-    def get_info_json_name(cls, key_word):
-        """Метод для фильтрации вакансий по ключевому слову в названии"""
-        with open(path_to_file, 'r', encoding='utf-8') as find_name_json:
-            find_name = json.load(find_name_json)
-            for key in find_name:
-                if key_word in key['name'].lower():
-                    cls.filtered_information.append(key)
+    # def get_info_json_name(cls, key_word):
+    #     """Метод для фильтрации вакансий по ключевому слову в названии"""
+    #     with open(path_to_file, 'r', encoding='utf-8') as find_name_json:
+    #         find_name = json.load(find_name_json)
+    #         for key in find_name:
+    #             if key_word in key['name'].lower():
+    #                 cls.filtered_information.append(key)
 
     @classmethod
-    def get_info_json_requirements(cls, key_word):
-        """Метод для фильтрации вакансий по ключевому слову в требованиях"""
-        with open(path_to_file, 'r', encoding='utf-8') as find_requirements_json:
-            find_requirements = json.load(find_requirements_json)
-            for key in find_requirements:
-                if key['requirements']:
-                    if key_word in key['requirements'].lower():
-                        cls.filtered_information.append(key)
+    def get_info_json_name(cls, vacancies, key_word):
+        list_name_sorted_vacancies = [v for v in vacancies if key_word in v.name]
+        return list_name_sorted_vacancies
+
+    @classmethod
+    def get_info_json_requirements(cls, vacancies, key_word):
+        list_name_sorted_requirements = [v for v in vacancies if key_word in v.requirements]
+        return list_name_sorted_requirements
+
+    # @classmethod
+    # def get_info_json_requirements(cls, key_word):
+    #     """Метод для фильтрации вакансий по ключевому слову в требованиях"""
+    #     with open(path_to_file, 'r', encoding='utf-8') as find_requirements_json:
+    #         find_requirements = json.load(find_requirements_json)
+    #         for key in find_requirements:
+    #             if key['requirements']:
+    #                 if key_word in key['requirements'].lower():
+    #                     cls.filtered_information.append(key)
