@@ -1,5 +1,6 @@
 import json
 from abc import ABC, abstractmethod
+from datetime import datetime
 
 from config import path_to_file
 
@@ -83,6 +84,13 @@ class Vacancy(VacanciesAbstract):
             'requirements': self.requirements,
             'published_at': self.published_at,
         }
+
+    @classmethod
+    def get_info_json_date(cls, list_vacancies):
+        """Метод для фильтрации вакансий по дате публикации"""
+        date_sorted_vacancies = sorted(list_vacancies, key=lambda x: datetime.fromisoformat(x.published_at),
+                                reverse=True)
+        return date_sorted_vacancies
 
     @classmethod
     def get_info_json_name(cls, key_word):
