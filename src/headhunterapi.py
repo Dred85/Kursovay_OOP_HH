@@ -40,6 +40,3 @@ class HeadHunterAPI(HeadHunterAPIAbstract):
                     published_at=info['published_at'])
             for info in response.json()['items']
         ]
-
-
-

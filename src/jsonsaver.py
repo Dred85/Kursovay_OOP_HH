@@ -59,8 +59,7 @@ class JSONSaver(JSONSaverAbstract):
             if txt['name'] == user_for_del:
                 print('Запись будет удалена')
                 data['personal'].pop(minimal)
-            else:
-                None
+
             minimal = minimal + 1
         print('Итоговый результат: ')
         print(data)

@@ -1,8 +1,5 @@
-import json
 from abc import ABC, abstractmethod
 from datetime import datetime
-
-from config import path_to_file
 
 
 class VacanciesAbstract(ABC):
@@ -52,7 +49,10 @@ class Vacancy(VacanciesAbstract):
             self.salary_to = salary_to
         else:
             self.salary_to = 0
-        self.requirements = requirements
+        if isinstance(requirements, str):
+            self.requirements = requirements
+        else:
+            self.requirements = ''
         self.published_at = published_at
 
     def __str__(self):
@@ -89,17 +89,8 @@ class Vacancy(VacanciesAbstract):
     def get_info_json_date(cls, list_vacancies):
         """Метод для фильтрации вакансий по дате публикации"""
         date_sorted_vacancies = sorted(list_vacancies, key=lambda x: datetime.fromisoformat(x.published_at),
-                                reverse=True)
+                                       reverse=True)
         return date_sorted_vacancies
-
-    @classmethod
-    # def get_info_json_name(cls, key_word):
-    #     """Метод для фильтрации вакансий по ключевому слову в названии"""
-    #     with open(path_to_file, 'r', encoding='utf-8') as find_name_json:
-    #         find_name = json.load(find_name_json)
-    #         for key in find_name:
-    #             if key_word in key['name'].lower():
-    #                 cls.filtered_information.append(key)
 
     @classmethod
     def get_info_json_name(cls, vacancies, key_word):
@@ -110,13 +101,3 @@ class Vacancy(VacanciesAbstract):
     def get_info_json_requirements(cls, vacancies, key_word):
         list_name_sorted_requirements = [v for v in vacancies if key_word in v.requirements]
         return list_name_sorted_requirements
-
-    # @classmethod
-    # def get_info_json_requirements(cls, key_word):
-    #     """Метод для фильтрации вакансий по ключевому слову в требованиях"""
-    #     with open(path_to_file, 'r', encoding='utf-8') as find_requirements_json:
-    #         find_requirements = json.load(find_requirements_json)
-    #         for key in find_requirements:
-    #             if key['requirements']:
-    #                 if key_word in key['requirements'].lower():
-    #                     cls.filtered_information.append(key)

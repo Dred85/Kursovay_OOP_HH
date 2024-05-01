@@ -17,7 +17,8 @@ def user_interaction():
     # Записываю все вакансии в JSON файл
     JSONSaver.add_json(list_vacancies)
 
-    q_sort_vacansies_date = input('Отсортировать вакансии по дате публикации - Да, перейти к другим вариантам фильтрации - нажмите Enter ')
+    q_sort_vacansies_date = input(
+        'Отсортировать вакансии по дате публикации - Да, перейти к другим вариантам фильтрации - нажмите Enter ')
 
     if q_sort_vacansies_date.lower() == 'да':
         # Выводим отсортированные по дате публикации вакансии ближайшей к нашей дате из файла json
@@ -30,14 +31,13 @@ def user_interaction():
         for v in date_sorted_vacancies[:quantity_profession]:
             print(v)
 
-        q_sort_vacansies_salary = input('Отсортировать вакансии по зарплате - Да, перейти к другим вариантам фильтрации - нажмите Enter ')
+        q_sort_vacansies_salary = input(
+            'Отсортировать вакансии по зарплате - Да, перейти к другим вариантам фильтрации - нажмите Enter ')
         if q_sort_vacansies_salary.lower() == 'да':
             sort_vacansies_salary = sorted(date_sorted_vacancies[:quantity_profession], key=lambda x: x.salary_from,
                                            reverse=True)
             for v in sort_vacansies_salary:
                 print(v)
-
-
 
     # Спрашиваю у пользователя хочет ли он отфильтровать изначальные вакансии по названию или по требованиям?
     q_filter_vacansies_name = input(
@@ -59,25 +59,6 @@ def user_interaction():
                                                                                     key_word_requirements)
             for v in list_requirements_sorted_vacancies:
                 print(v)
-
-        #     key_word_requirements = input('Введите ключевое слово в описании вакансии: ')
-        #     Vacancy.get_info_json_requirements(key_word_requirements)
-        # salary = input("Введите диапазон зарплат через '-' (100000 - 150000): ")
-        # salary_split = salary.split('-')
-
-        # Вывожу отсортированные вакансии в том количестве и критериям которые попросил пользователь
-
-    #         for v in Vacancy.filtered_information:
-    #             if int(v['salary_from']) > int(salary_split[0]):
-    #                 print(f'Отфильтрованные вакансии по заданным критериям:')
-    #
-    #                 print(f"""ID: {v['ID']}
-    #     Наименование вакансии: {v['name']}
-    #     Ссылка: {v['link_to_vacancy']}
-    #     Зарплата от {v['salary_from']} до {v['salary_to']}
-    #     Требования: {v['requirements']}
-    # Дата публикации: {v['published_at']}\n""")
-
     else:
         print('До скорых встреч')
 
