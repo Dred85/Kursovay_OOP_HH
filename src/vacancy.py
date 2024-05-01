@@ -1,5 +1,7 @@
+import json
 from abc import ABC, abstractmethod
 
+from config import path_to_file
 
 
 class VacanciesAbstract(ABC):
@@ -20,7 +22,7 @@ class VacanciesAbstract(ABC):
 
     @abstractmethod
     def to_json(self):
-        """Абстрактный метод, насколько я понял, для конвертации информации которая будет добавлена в файл JSON"""
+        """Абстрактный метод, для конвертации информации которая будет добавлена в файл JSON"""
         pass
 
 
@@ -33,7 +35,9 @@ class Vacancy(VacanciesAbstract):
     salary_to - максимальная зарплата
     requirements - требования к вакансии
     published_at - дата публикации вакансии
-    Так же если зарплата не указана то вывожу об этом сообщение"""
+    Так же если зарплата не указана то вывожу 0"""
+
+    filtered_information = []
 
     def __init__(self, id, name, link_to_vacancy, salary_from, salary_to, requirements, published_at):
         self.id = id
@@ -80,5 +84,21 @@ class Vacancy(VacanciesAbstract):
             'published_at': self.published_at,
         }
 
+    @classmethod
+    def get_info_json_name(cls, key_word):
+        """Метод для фильтрации вакансий по ключевому слову в названии"""
+        with open(path_to_file, 'r', encoding='utf-8') as find_name_json:
+            find_name = json.load(find_name_json)
+            for key in find_name:
+                if key_word in key['name'].lower():
+                    cls.filtered_information.append(key)
 
-
+    @classmethod
+    def get_info_json_requirements(cls, key_word):
+        """Метод для фильтрации вакансий по ключевому слову в требованиях"""
+        with open(path_to_file, 'r', encoding='utf-8') as find_requirements_json:
+            find_requirements = json.load(find_requirements_json)
+            for key in find_requirements:
+                if key['requirements']:
+                    if key_word in key['requirements'].lower():
+                        cls.filtered_information.append(key)

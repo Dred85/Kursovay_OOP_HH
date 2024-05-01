@@ -31,7 +31,7 @@ class HeadHunterAPI(HeadHunterAPIAbstract):
             self.vacancies.extend(vacancies)
             self.params['page'] += 1
 
-        # return response.json()['items']
+
         return [
             Vacancy(id=info['id'],
                     name=info['name'],
@@ -44,8 +44,4 @@ class HeadHunterAPI(HeadHunterAPIAbstract):
         ]
 
 
-if __name__ == '__main__':
-    hh = HeadHunterAPI()
-    hh.load_vacancies('Python')
-    # print()
-    print(hh.vacancies[:2])
+
