@@ -1,7 +1,6 @@
 from src.headhunterapi import HeadHunterAPI
 from src.jsonsaver import JSONSaver
 from src.vacancy import Vacancy
-from datetime import datetime
 
 
 def user_interaction():
@@ -21,8 +20,9 @@ def user_interaction():
     q_sort_vacansies_date = input('Отсортировать вакансии по дате публикации (Да/Нет)? ')
 
     # Выводим отсортированные по дате публикации вакансии ближайшей к нашей дате из файла json
-    date_sorted_vacancies = sorted(list_vacancies, key=lambda x: datetime.fromisoformat(x.published_at),
-                                   reverse=True)
+
+    date_sorted_vacancies = Vacancy.get_info_json_date(list_vacancies)
+
     if q_sort_vacansies_date.lower() == 'да':
 
         for v in date_sorted_vacancies:
@@ -77,8 +77,6 @@ def user_interaction():
 
     else:
         print('До скорых встреч')
-
-
 
 
 if __name__ == "__main__":
