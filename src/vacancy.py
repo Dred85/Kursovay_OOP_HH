@@ -79,7 +79,7 @@ class Vacancy(VacanciesAbstract):
 
     def __lt__(self, other):
         """Метод позволяет использовать оператор меньше (<) для сравнения объектов этого класса"""
-        return self.salary_to < other.salary_to
+        return self.salary_from < other.salary_from
 
     def to_json(self):
         """Метод для подготовки информации к записи в файл JSON"""
@@ -102,10 +102,12 @@ class Vacancy(VacanciesAbstract):
 
     @classmethod
     def get_info_json_name(cls, vacancies, key_word):
+        """Метод для фильтрации вакансий по ключевому слову в названии"""
         list_name_sorted_vacancies = [v for v in vacancies if key_word in v.name]
         return list_name_sorted_vacancies
 
     @classmethod
     def get_info_json_requirements(cls, vacancies, key_word):
+        """Метод для фильтрации вакансий по ключевому слову в описании"""
         list_name_sorted_requirements = [v for v in vacancies if key_word in v.requirements]
         return list_name_sorted_requirements
