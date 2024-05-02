@@ -35,6 +35,14 @@ class Vacancy(VacanciesAbstract):
     published_at - дата публикации вакансии
     Так же если зарплата не указана то вывожу 0"""
 
+    id: str
+    name: str
+    link_to_vacancy: str
+    salary_from: int
+    salary_to: int
+    requirements: str
+    published_at: str
+
     filtered_information = []
 
     def __init__(self, id, name, link_to_vacancy, salary_from, salary_to, requirements, published_at):

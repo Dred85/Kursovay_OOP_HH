@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 from config import path_to_file
 
 
-class JSONSaverAbstract(ABC):
+class Parser(ABC):
     """Абстрактный класс для добавления/удаления вакансий в JSON файл"""
 
     @staticmethod
@@ -26,7 +26,7 @@ class JSONSaverAbstract(ABC):
         pass
 
 
-class JSONSaver(JSONSaverAbstract):
+class JSONSaver(Parser):
     """Класс для добавления вакансий в JSON файл"""
 
     @staticmethod
