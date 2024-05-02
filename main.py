@@ -1,53 +1,66 @@
-from pprint import pprint
-
 from src.headhunterapi import HeadHunterAPI
 from src.jsonsaver import JSONSaver
+from src.vacancy import Vacancy
 
 
 def user_interaction():
     """Функция для взаимодействия с пользователем"""
 
     profession = input("Введите профессию для поиска: ")
-    quantity_profession = int(input("Какое количество вакансий с наибольшей зарплатой вы хотите увидеть? "))
 
-    # Указываю ссылку на API HH
-    hh_url = HeadHunterAPI('https://api.hh.ru/vacancies')
+    # Создаю объект класса HeadHunterAPI
+    hh_url = HeadHunterAPI()
 
-    # Получаю вакансии и сортирую их
-    vacancies = hh_url.get_info(profession)
+    # Получаю список экземпляров класса Vacancy, сформированных по ключу: profession
+    list_vacancies = hh_url.load_vacancies(profession)
 
     # Записываю все вакансии в JSON файл
-    JSONSaver.add_json(vacancies)
+    JSONSaver.add_json(list_vacancies)
 
-    # Спрашиваю у пользователя вывести ли топ вакансий в количестве которое он указал?
-    sort_vacansies_pay = input('Хотите увидеть вакансии с наибольшей зарплатой (Да/Нет)? ')
-    if sort_vacansies_pay.lower() == 'да':
-        # Вывожу отсортированные вакансии в том количестве которое попросил пользователь
-        vacancies_sorted = sorted(vacancies, reverse=True)
-        pprint(vacancies_sorted[:quantity_profession])
+    q_sort_vacansies_date = input(
+        'Отсортировать вакансии по дате публикации - Да, перейти к другим вариантам фильтрации - нажмите Enter ')
 
-    # Спрашиваю у пользователя хочет ли он дополнительно отсортировать вакансии по названию или по требованиям
-    sort_vacansies_name = input('Отсортируем дополнительно вакансии по названию или по требованиям(Да/Нет)? ')
-    if sort_vacansies_name.lower() == 'да':
+    if q_sort_vacansies_date.lower() == 'да':
+        # Выводим отсортированные по дате публикации вакансии ближайшей к нашей дате из файла json
+        date_sorted_vacancies = Vacancy.get_info_json_date(list_vacancies)
+        for v in date_sorted_vacancies:
+            print(v)
+
+        quantity_profession = int(input("Укажите сколько отсортированных по времени вакансий оставить для просмотра? "))
+
+        for v in date_sorted_vacancies[:quantity_profession]:
+            print(v)
+
+        q_sort_vacansies_salary = input(
+            'Отсортировать вакансии по зарплате - Да, перейти к другим вариантам фильтрации - нажмите Enter ')
+        if q_sort_vacansies_salary.lower() == 'да':
+            sort_vacansies_salary = sorted(date_sorted_vacancies[:quantity_profession], key=lambda x: x.salary_from,
+                                           reverse=True)
+            for v in sort_vacansies_salary:
+                print(v)
+
+    # Спрашиваю у пользователя хочет ли он отфильтровать изначальные вакансии по названию или по требованиям?
+    q_filter_vacansies_name = input(
+        'Отфильтровать изначальный список вакансий по названию или по требованиям(Да/Нет)? ')
+    if q_filter_vacansies_name.lower() == 'да':
         # Спрашиваю у пользователя по чему конкретно будем сортировать
-        sort_vacansies_name_or_requirements = input('Сортируем по названию или по требованиям (н/т)? ')
-        if sort_vacansies_name_or_requirements.lower() == 'н':
+        q_filter_vacansies_name_or_requirements = input('Фильтруем по названию или по требованиям (Н/Т)? ')
+        if q_filter_vacansies_name_or_requirements.lower() == 'н':
             # Спрашиваю у пользователя название вакансии для сортировки
-            key_word_vacansies = input('Введите ключевое слово в названии вакансии: ')
-            JSONSaver.get_info_json_name(key_word_vacansies)
-        elif sort_vacansies_name_or_requirements == 'т':
+            key_word_vacansies = input('Введите ключевое слово в наименовании вакансии: ')
+            list_name_sorted_vacancies = Vacancy.get_info_json_requirements(list_vacancies, key_word_vacansies)
+            for v in list_name_sorted_vacancies:
+                print(v)
+
+        else:
+            # Спрашиваю у пользователя ключевое слово для сортировки по описанию вакансии
             key_word_requirements = input('Введите ключевое слово в описании вакансии: ')
-            JSONSaver.get_info_json_requirements(key_word_requirements)
-
-
-    salary = input('Введите диапазон зарплат через - (10000 - 100000): ')
-    salary_split = salary.split('-')
-
-    # Вывожу отсортированные вакансии в том количестве и критериямб которые попросил пользователь
-    for salary in JSONSaver.filtered_information:
-        if int(salary['salary_from']) > int(salary_split[0]):
-            print(f'{salary['name']}, {salary['link_to_vacancy']}, {salary['salary_from']}, {salary['salary_to']}, '
-                  f'{salary['requirements']}')
+            list_requirements_sorted_vacancies = Vacancy.get_info_json_requirements(list_vacancies,
+                                                                                    key_word_requirements)
+            for v in list_requirements_sorted_vacancies:
+                print(v)
+    else:
+        print('До скорых встреч')
 
 
 if __name__ == "__main__":
