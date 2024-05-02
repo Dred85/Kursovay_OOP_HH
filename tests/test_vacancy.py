@@ -21,7 +21,33 @@ def vacancy2():
                    200000,
                    600000,
                    "Знание Python",
-                   "2024-04-17T13:33:10+0300")
+                   "2018-04-17T13:33:10+0300")
+
+
+@pytest.fixture
+def list_vacancies():
+    return [Vacancy("97223663",
+                    "Full stack developer (angular + java)",
+                    "https://hh.ru/vacancy/97223662",
+                    200000,
+                    600000,
+                    "Знание Python",
+                    "2019-04-17T13:33:10+0300"),
+            Vacancy("97223663",
+                    "Full stack developer (angular + java)",
+                    "https://hh.ru/vacancy/97223662",
+                    200000,
+                    600000,
+                    "Знание Python",
+                    "2018-04-17T13:33:10+0300"),
+            Vacancy("97223662",
+                    "Full stack developer (angular + java)",
+                    "https://hh.ru/vacancy/97223662",
+                    100000,
+                    500000,
+                    "Знание Python",
+                    "2024-04-17T13:33:10+0300")
+            ]
 
 
 def test_init(vacancy1):
@@ -64,3 +90,14 @@ def test_to_json(vacancy1):
                                   'salary_to': 500000,
                                   'requirements': 'Знание Python',
                                   'published_at': '2024-04-17T13:33:10+0300'}
+
+
+def test_get_info_json_date(list_vacancies):
+    """Тестирую метод для фильтрации вакансий по дате публикаци"""
+    assert Vacancy.get_info_json_date(list_vacancies) == [
+        Vacancy('97223662', 'Full stack developer (angular + java)', 'https://hh.ru/vacancy/97223662', 100000,
+                500000, 'Знание Python', '2024-04-17T13:33:10+0300'),
+        Vacancy('97223663', 'Full stack developer (angular + java)', 'https://hh.ru/vacancy/97223662', 200000,
+                600000, 'Знание Python', '2019-04-17T13:33:10+0300'),
+        Vacancy('97223663', 'Full stack developer (angular + java)', 'https://hh.ru/vacancy/97223662', 200000,
+                600000, 'Знание Python', '2018-04-17T13:33:10+0300')]
