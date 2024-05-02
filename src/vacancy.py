@@ -64,7 +64,7 @@ class Vacancy(VacanciesAbstract):
         self.published_at = published_at
 
     def __str__(self):
-        """Метод вывода информации по вакансиям"""
+        """Метод вывода информации по вакансиям для пользователя"""
         return f"""ID: {self.id}
     Наименование вакансии: {self.name}
     Ссылка: {self.link_to_vacancy}
@@ -73,7 +73,7 @@ class Vacancy(VacanciesAbstract):
 Дата публикации: {self.published_at}\n"""
 
     def __repr__(self):
-        """Метод вывода информации по вакансиям"""
+        """Метод вывода информации по вакансиям для отладки"""
         return f'{self.__class__.__name__}({self.id}, {self.name}, {self.link_to_vacancy}, {self.salary_from} - \
 {self.salary_to}, {self.requirements}, {self.published_at})'
 
