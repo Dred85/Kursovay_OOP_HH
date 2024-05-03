@@ -3,7 +3,7 @@ from src.jsonsaver import JSONSaver
 from src.vacancy import Vacancy
 
 
-def user_interaction():
+def user_interaction() -> None:
     """Функция для взаимодействия с пользователем"""
 
     profession = input("Введите профессию для поиска: ")
