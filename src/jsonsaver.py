@@ -41,6 +41,7 @@ class JSONSaver(SaverInToFile):
         """Метод для добавления вакансий в файл JSON"""
         with open(path_to_file_update, 'r', encoding='utf-8') as f:
             data = json.load(f)
+            # vacancies.to_json() - вернет словарь
             data_update = data + [vacancies.to_json()]
 
         with open(path_to_file_update, 'w', encoding='utf-8') as f:

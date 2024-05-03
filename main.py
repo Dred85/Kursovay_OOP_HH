@@ -24,7 +24,6 @@ def user_interaction() -> None:
         # Выводим отсортированные по дате публикации вакансии ближайшей к нашей дате из файла json
         date_sorted_vacancies = Vacancy.get_info_json_date(list_vacancies)
         for v in date_sorted_vacancies:
-            JSONSaver.update_json(v)
             print(v)
 
         quantity_profession = int(input("Укажите сколько отсортированных по времени вакансий оставить для просмотра? "))
@@ -38,6 +37,7 @@ def user_interaction() -> None:
             sort_vacansies_salary = sorted(date_sorted_vacancies[:quantity_profession], key=lambda x: x.salary_from,
                                            reverse=True)
             for v in sort_vacansies_salary:
+                # Добавить отсортированные вакансии в файл json
                 JSONSaver.update_json(v)
                 print(v)
 
