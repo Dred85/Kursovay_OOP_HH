@@ -1,0 +1,902 @@
+[
+    {
+        "ID": "96679486",
+        "name": "Senior QA Engineer",
+        "link_to_vacancy": "https://hh.ru/vacancy/96679486",
+        "salary_from": 1000000,
+        "salary_to": 0,
+        "requirements": "Опыт работы с <highlighttext>python</highlighttext> и pytest. Понимание принципов HTTP/REST, опыт тестирования API. Приветствуется знание языков и протоколов: XML, JSON...",
+        "published_at": "2024-04-11T08:07:47+0300"
+    },
+    {
+        "ID": "97453669",
+        "name": "Supply Chain Manager / Менеджер отдела логистики",
+        "link_to_vacancy": "https://hh.ru/vacancy/97453669",
+        "salary_from": 145000,
+        "salary_to": 0,
+        "requirements": "Confident Excel user. Experience in programming (<highlighttext>Python</highlighttext>/Visual Basic/C++, etc.) and Power BI would be considered a competitive advantage. ",
+        "published_at": "2024-04-19T16:20:20+0300"
+    },
+    {
+        "ID": "97976514",
+        "name": "Data scientist/ML engineer",
+        "link_to_vacancy": "https://hh.ru/vacancy/97976514",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Уверенное владеет <highlighttext>python</highlighttext>(библиотеки sklearn, pandas + библиотеки обработки текстовых данных). Имеет опыт работы с Git, DVC, MLFlow, SQL, Linux. ",
+        "published_at": "2024-04-26T10:50:46+0300"
+    },
+    {
+        "ID": "98096336",
+        "name": "Разработчик Bigdata",
+        "link_to_vacancy": "https://hh.ru/vacancy/98096336",
+        "salary_from": 250000,
+        "salary_to": 350000,
+        "requirements": "Опыт проектирования и разработки систем на базе Hadoop, Spark, Spark-SQL, Hive, Kafka, Atlas, Airflow. Опыт завершенных масштабных и сложных...",
+        "published_at": "2024-04-27T20:53:46+0300"
+    },
+    {
+        "ID": "98328757",
+        "name": "Инженер-разработчик FPGA",
+        "link_to_vacancy": "https://hh.ru/vacancy/98328757",
+        "salary_from": 45000,
+        "salary_to": 70000,
+        "requirements": "Знание языков Verilog и/или SystemVerilog. Знакомство со скриптовыми языками (perl/<highlighttext>python</highlighttext>/tcl/shell) и make. Опыт работы с системой...",
+        "published_at": "2024-05-03T12:29:48+0300"
+    },
+    {
+        "ID": "93918752",
+        "name": "Программист роботов",
+        "link_to_vacancy": "https://hh.ru/vacancy/93918752",
+        "salary_from": 200000,
+        "salary_to": 0,
+        "requirements": "Опыт в отрасли на схожих должностях от 3 лет. Знание языков программирования <highlighttext>Python</highlighttext>, Java ыcript и другие. Знание сетевых технологий. ",
+        "published_at": "2024-04-30T10:45:06+0300"
+    },
+    {
+        "ID": "93929245",
+        "name": "Дежурный администратор,работа с инцидентами",
+        "link_to_vacancy": "https://hh.ru/vacancy/93929245",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Навыки работы с инструментами CI/CD (Ansible/Jenkins/Bitbucket/Nexus). Опыт написания скриптов на Bash/<highlighttext>Python</highlighttext> или др.. ",
+        "published_at": "2024-04-18T08:02:54+0300"
+    },
+    {
+        "ID": "95868952",
+        "name": "Аналитик в Collection",
+        "link_to_vacancy": "https://hh.ru/vacancy/95868952",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Умеете работать с большими объемами данных. Целеустремленны, умеете доводить дело до конца. Будет плюсом знание <highlighttext>Python</highlighttext>, BI-инструментов.",
+        "published_at": "2024-04-22T12:10:13+0300"
+    },
+    {
+        "ID": "96427885",
+        "name": "Аналитик данных",
+        "link_to_vacancy": "https://hh.ru/vacancy/96427885",
+        "salary_from": 0,
+        "salary_to": 100000,
+        "requirements": "Опытный пользователь Excel, в т.ч.PowerQuery, PowerPivot. Навык работы с SQL. Знание <highlighttext>Python</highlighttext>, Knime будет преимуществом. Опыт работы без обучения от...",
+        "published_at": "2024-04-08T14:01:13+0300"
+    },
+    {
+        "ID": "96611453",
+        "name": "Java-разработчик",
+        "link_to_vacancy": "https://hh.ru/vacancy/96611453",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Практический опыт профилирования Java-приложений. Базовое понимание работы AI моделей. Базовое знание <highlighttext>Python</highlighttext> для интеграции AI моделей в систему. ",
+        "published_at": "2024-04-10T12:25:11+0300"
+    },
+    {
+        "ID": "96748675",
+        "name": "Data Engineer",
+        "link_to_vacancy": "https://hh.ru/vacancy/96748675",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Знакомство с принципами и практиками Data Governance, Quality, Lineage. Навыки программирования (например, <highlighttext>Python</highlighttext>, Java, Scala) и опыт работы с SQL...",
+        "published_at": "2024-04-11T18:23:52+0300"
+    },
+    {
+        "ID": "98096343",
+        "name": "Разработчик Bigdata",
+        "link_to_vacancy": "https://hh.ru/vacancy/98096343",
+        "salary_from": 250000,
+        "salary_to": 350000,
+        "requirements": "Опыт проектирования и разработки систем на базе Hadoop, Spark, Spark-SQL, Hive, Kafka, Atlas, Airflow. Опыт завершенных масштабных и сложных...",
+        "published_at": "2024-04-27T20:53:46+0300"
+    },
+    {
+        "ID": "78050064",
+        "name": "QA Automation",
+        "link_to_vacancy": "https://hh.ru/vacancy/78050064",
+        "salary_from": 46000,
+        "salary_to": 92000,
+        "requirements": "Желание развиваться в области автотестирования. Будет несомненным плюсом: Знание <highlighttext>Python</highlighttext>. Знание Selenium Webdriver. Опыт разработки автотестов. Понимание принципов разработки и...",
+        "published_at": "2024-04-08T12:09:37+0300"
+    },
+    {
+        "ID": "90942353",
+        "name": "Аналитик (разработка аналитической отчетности)",
+        "link_to_vacancy": "https://hh.ru/vacancy/90942353",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Аналитический склад ума, умение четко и ясно излагать свои мысли, самостоятельность. Знание SQL, Excel, <highlighttext>Python</highlighttext> (нач. уровень).",
+        "published_at": "2024-04-15T09:53:10+0300"
+    },
+    {
+        "ID": "93609042",
+        "name": "QA engineer (telecom)",
+        "link_to_vacancy": "https://hh.ru/vacancy/93609042",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Знания в сфере телеком и/или в GSM. Знание <highlighttext>Python</highlighttext>, т.к. мы используем его при тестировании наших сервисов. ",
+        "published_at": "2024-05-03T13:32:13+0300"
+    },
+    {
+        "ID": "96173908",
+        "name": "Data Engineer",
+        "link_to_vacancy": "https://hh.ru/vacancy/96173908",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Высшее образование: IT / математическое / техническое. Знание <highlighttext>Python</highlighttext>, Spark, SQL, OLAP-кубы, GreenPlum, Hadoop.",
+        "published_at": "2024-05-02T10:35:00+0300"
+    },
+    {
+        "ID": "96203990",
+        "name": "Инженер-программист",
+        "link_to_vacancy": "https://hh.ru/vacancy/96203990",
+        "salary_from": 46600,
+        "salary_to": 0,
+        "requirements": "Основные навыки: работа с базами данных (PostgreSQL), языки программирования C#, <highlighttext>Python</highlighttext>. Знание ОС Linux приветствуется. Уверенный пользователь ПК и офисных...",
+        "published_at": "2024-05-01T17:26:18+0300"
+    },
+    {
+        "ID": "96508339",
+        "name": "Data Analyst / Аналитик данных",
+        "link_to_vacancy": "https://hh.ru/vacancy/96508339",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Отличное знание SQL и баз данных. Знание математической статистики, предиктивной аналитики и опыт их применения на практике. Уверенное знание <highlighttext>Python</highlighttext>...",
+        "published_at": "2024-05-03T11:25:47+0300"
+    },
+    {
+        "ID": "96749794",
+        "name": "DataOps",
+        "link_to_vacancy": "https://hh.ru/vacancy/96749794",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Опыт внедрения и поддержки процессов DataOps в организации. Глубокие познания в области автоматизации процессов разработки, тестирования и развертывания аналитических решений. ",
+        "published_at": "2024-04-11T18:46:29+0300"
+    },
+    {
+        "ID": "98096335",
+        "name": "Разработчик Bigdata",
+        "link_to_vacancy": "https://hh.ru/vacancy/98096335",
+        "salary_from": 250000,
+        "salary_to": 350000,
+        "requirements": "Опыт проектирования и разработки систем на базе Hadoop, Spark, Spark-SQL, Hive, Kafka, Atlas, Airflow. Опыт завершенных масштабных и сложных...",
+        "published_at": "2024-04-27T20:53:46+0300"
+    },
+    {
+        "ID": "98127855",
+        "name": "Senior data инженер",
+        "link_to_vacancy": "https://hh.ru/vacancy/98127855",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Работали с DWH в качестве разработчика минимум 2 года. Понимаете теорию СУБД- и ETL-процессов. Есть опыт проектирования объектов БД...",
+        "published_at": "2024-04-29T09:43:35+0300"
+    },
+    {
+        "ID": "91549163",
+        "name": "С++ / Go Developer",
+        "link_to_vacancy": "https://hh.ru/vacancy/91549163",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Высшее или неоконченное высшее техническое образование. Опыт разработки на С++ / Go от 2-х лет. Понимание архитектуры высоконагруженных сервисов и...",
+        "published_at": "2024-04-24T16:55:16+0300"
+    },
+    {
+        "ID": "97603100",
+        "name": "Инженер отдела внедрения",
+        "link_to_vacancy": "https://hh.ru/vacancy/97603100",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Опыт написания скриптов( <highlighttext>Python</highlighttext>, Shell scripting и др.). Знание основ работы компьютерных сетей и протоколов. Глубокое понимание клиент-серверных архитектур. ",
+        "published_at": "2024-04-22T10:51:55+0300"
+    },
+    {
+        "ID": "98206032",
+        "name": "Data Scientist / ML-инженер (Big Data)",
+        "link_to_vacancy": "https://hh.ru/vacancy/98206032",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "У вас продвинутые знания <highlighttext>Python</highlighttext>, в т.ч. основных ml-библиотек. Умение делать препроцессинг данных на SQL или PySpark. ",
+        "published_at": "2024-05-02T09:07:55+0300"
+    },
+    {
+        "ID": "88600200",
+        "name": "Специалист центра мониторинга ИБ (1L)",
+        "link_to_vacancy": "https://hh.ru/vacancy/88600200",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Базовые знания написания скриптов (bash, PowerShell). Фундаментальные знания Иб, linux, Windows, Network. Опыт работы с Windows\\Linux системами. ",
+        "published_at": "2024-04-15T14:11:08+0300"
+    },
+    {
+        "ID": "92545394",
+        "name": "Python-разработчик (middle)",
+        "link_to_vacancy": "https://hh.ru/vacancy/92545394",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Опыт коммерческой разработки от 3-х лет. Хорошее знание веб-фреймворка Django. Опыт работы с микросервисной архитектурой (понимание плюсов и...",
+        "published_at": "2024-05-02T15:27:39+0300"
+    },
+    {
+        "ID": "94105831",
+        "name": "Ведущий специалист группы эксплуатации сети",
+        "link_to_vacancy": "https://hh.ru/vacancy/94105831",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Умение автоматизировать рутинные и массовые задачи (<highlighttext>python</highlighttext>, ansible). Опыт работы с крупными сетями распределенной архитектуры, включающими как LAN, так и...",
+        "published_at": "2024-04-12T17:34:11+0300"
+    },
+    {
+        "ID": "95731700",
+        "name": "Разработчик/Senior разработчик C++",
+        "link_to_vacancy": "https://hh.ru/vacancy/95731700",
+        "salary_from": 200000,
+        "salary_to": 350000,
+        "requirements": "...оптимизации производительности, поиска утечек памяти. Знание особенностей многопоточного программирования. Опыт автоматического тестирования и написания юнит-тестов. Знание <highlighttext>Python</highlighttext>. Знание QT.",
+        "published_at": "2024-04-27T19:05:00+0300"
+    },
+    {
+        "ID": "96073001",
+        "name": "Сетевой инженер",
+        "link_to_vacancy": "https://hh.ru/vacancy/96073001",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "...программами сканирования на уязвимости и анализ результатов. Умение писать скрипты для автоматизации процессов. Как плюс: Опыт написания скриптов на <highlighttext>Python</highlighttext>.",
+        "published_at": "2024-04-19T15:33:04+0300"
+    },
+    {
+        "ID": "96278252",
+        "name": "Аналитик данных в Блок Риски",
+        "link_to_vacancy": "https://hh.ru/vacancy/96278252",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Опыт работы с сфере анализа данных от 1 года. <highlighttext>Python</highlighttext>:стандартные структуры данных (dict, list, set, модуль collections), pandas, numpy. ",
+        "published_at": "2024-04-05T16:23:00+0300"
+    },
+    {
+        "ID": "97120406",
+        "name": "DevOps / SRE",
+        "link_to_vacancy": "https://hh.ru/vacancy/97120406",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Умение автоматизировать рутинные операции (знание одного из скриптовых/интерпретируемых языков bash/<highlighttext>python</highlighttext>/и т.п.). Опыт построения CI/CD (мы...",
+        "published_at": "2024-04-16T13:37:25+0300"
+    },
+    {
+        "ID": "97938485",
+        "name": "Data Engineer направления разработки витрин данных",
+        "link_to_vacancy": "https://hh.ru/vacancy/97938485",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Хорошее знание устройства Hadoop,Spark,Hive/Impala. Опыт разработки на <highlighttext>Python</highlighttext>/Scala/Java. Понимание основных концепций DWH. Понимание базовых команд...",
+        "published_at": "2024-04-25T20:34:34+0300"
+    },
+    {
+        "ID": "98141293",
+        "name": "Team Lead Data Analyst",
+        "link_to_vacancy": "https://hh.ru/vacancy/98141293",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Опыт в проведении A/B тестирования и понимание продуктовых метрик. Опыт работы с SQL, <highlighttext>Python</highlighttext> и инструментами BI. ",
+        "published_at": "2024-04-29T18:55:48+0300"
+    },
+    {
+        "ID": "98237739",
+        "name": "Финансовый аналитик",
+        "link_to_vacancy": "https://hh.ru/vacancy/98237739",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "...анализа данных, работа с надстройкой Power Query и Power Pivot). Опыт работы с платежными системами, агрегаторами. Знание <highlighttext>Python</highlighttext> как преимущество.",
+        "published_at": "2024-05-02T12:51:06+0300"
+    },
+    {
+        "ID": "92081274",
+        "name": "Инженер-программист",
+        "link_to_vacancy": "https://hh.ru/vacancy/92081274",
+        "salary_from": 150000,
+        "salary_to": 0,
+        "requirements": "Какие навыки нужны: Опыт разработки приложений на языке C#. Знание реляционных баз данных и языка запросов SQL. Базовая подготовка: методологии...",
+        "published_at": "2024-04-16T09:17:39+0300"
+    },
+    {
+        "ID": "94185521",
+        "name": "Python-разработчик",
+        "link_to_vacancy": "https://hh.ru/vacancy/94185521",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Знаешь <highlighttext>Python</highlighttext> 3 и имеешь опыт промышленной разработки на <highlighttext>Python</highlighttext> от трех лет. Есть опыт многопоточного и асинхронного программирования. ",
+        "published_at": "2024-05-03T09:05:24+0300"
+    },
+    {
+        "ID": "94784075",
+        "name": "Middle Auto QA Engineer [EP Charging]",
+        "link_to_vacancy": "https://hh.ru/vacancy/94784075",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Опыт автоматизации тестирования API и backend приложений (наши тесты написаны на <highlighttext>Python</highlighttext>). Навыки работы с *nix-системами на базовом уровне...",
+        "published_at": "2024-04-09T09:15:48+0300"
+    },
+    {
+        "ID": "95701303",
+        "name": "Junior CC++ разработчик (Embedded Linux)",
+        "link_to_vacancy": "https://hh.ru/vacancy/95701303",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Будет плюсом, если у тебя есть: Знание языков <highlighttext>Python</highlighttext>, Bash для написания скриптов. Знание цифровой схемотехники и навыки чтения принципиальных...",
+        "published_at": "2024-04-23T10:58:51+0300"
+    },
+    {
+        "ID": "96448685",
+        "name": "Middle Data Scientist",
+        "link_to_vacancy": "https://hh.ru/vacancy/96448685",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Навыки преобразования датасетов. Аналитические способности и логическое мышление. Технологический стек: Владение <highlighttext>Python</highlighttext> и основными ML-библиотеками (Pandas, Keras, PyTorch, XGBoost...",
+        "published_at": "2024-04-08T17:19:45+0300"
+    },
+    {
+        "ID": "96723743",
+        "name": "System administrator",
+        "link_to_vacancy": "https://hh.ru/vacancy/96723743",
+        "salary_from": 300,
+        "salary_to": 0,
+        "requirements": "Желание и способность быстро осваивать новые Интернет-технологии. Стремление к профессиональному росту. Можем взять также студента. Желание расти как system...",
+        "published_at": "2024-04-11T14:49:26+0300"
+    },
+    {
+        "ID": "97739179",
+        "name": "Ведущий инженер данных",
+        "link_to_vacancy": "https://hh.ru/vacancy/97739179",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Имеешь опыт администрирования Linux и опыт работы с инструментами автоматизации. Умеешь писать скрипты на <highlighttext>Python</highlighttext> и Bash (или других языках).",
+        "published_at": "2024-04-23T16:14:48+0300"
+    },
+    {
+        "ID": "97915148",
+        "name": "Python-разработчик",
+        "link_to_vacancy": "https://hh.ru/vacancy/97915148",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Опыт разработки на <highlighttext>Python</highlighttext> не менее 3 лет (<highlighttext>Python</highlighttext> 3.5+). Опыт работы с Django framework. Опыт работы с...",
+        "published_at": "2024-04-25T14:36:15+0300"
+    },
+    {
+        "ID": "98066800",
+        "name": "Специалист систем видео и мониторинга",
+        "link_to_vacancy": "https://hh.ru/vacancy/98066800",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Владеете английским языком на уровне чтения и понимания технической документации. Имеете базовые навыки программирования (<highlighttext>Python</highlighttext>, PowerShell, etc.) и имеете опыт...",
+        "published_at": "2024-04-27T12:29:20+0300"
+    },
+    {
+        "ID": "98360623",
+        "name": "Senior Data Scientist",
+        "link_to_vacancy": "https://hh.ru/vacancy/98360623",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Знание методов математической статистики, ML, оптимизации. Свободное владение <highlighttext>Python</highlighttext> и наиболее популярными библиотеками для работы с данными/моделирования (pandas, numpy...",
+        "published_at": "2024-05-03T17:22:04+0300"
+    },
+    {
+        "ID": "91624792",
+        "name": "Системный администратор Linux",
+        "link_to_vacancy": "https://hh.ru/vacancy/91624792",
+        "salary_from": 120000,
+        "salary_to": 170000,
+        "requirements": "Опыт работы в сфере системного администрирования от года. Знание <highlighttext>Python</highlighttext>. Навыки работы с Ansible. Опыт администрирования высоконагруженных серверов CentOS / RedHat...",
+        "published_at": "2024-04-12T18:03:12+0300"
+    },
+    {
+        "ID": "94363747",
+        "name": "Data Engineer",
+        "link_to_vacancy": "https://hh.ru/vacancy/94363747",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Будет плюсом: Опыт работы с MPP СУБД, в частности с Teradata. Опыт проведения анализа данных с помощью <highlighttext>Python</highlighttext>. ",
+        "published_at": "2024-04-23T12:09:33+0300"
+    },
+    {
+        "ID": "95895546",
+        "name": "QA Engineer",
+        "link_to_vacancy": "https://hh.ru/vacancy/95895546",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Опыт программирования на одном из языков: Java, Js, Go, <highlighttext>Python</highlighttext>. Знания принципов клиент-серверного взаимодействия и сетевых протоколов. ",
+        "published_at": "2024-04-26T08:48:01+0300"
+    },
+    {
+        "ID": "96244194",
+        "name": "Стажёр по направлению \"Финансовый анализ\" от SBERSEASONS",
+        "link_to_vacancy": "https://hh.ru/vacancy/96244194",
+        "salary_from": 0,
+        "salary_to": 41400,
+        "requirements": "Необходимые навыки: — продвинутые знания в области математики, эконометрики и статистики. — базовое знание MS Excel, <highlighttext>Python</highlighttext>, SQL. — уверенное владение линейными (OLS...",
+        "published_at": "2024-04-05T10:24:03+0300"
+    },
+    {
+        "ID": "96449325",
+        "name": "QA engineer (Тренажер знаний)",
+        "link_to_vacancy": "https://hh.ru/vacancy/96449325",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Теоретические знания и практический опыт внедрения инструментов и практик DevOps. Практический опыт программирования <highlighttext>Python</highlighttext> или Java. Использование Selenium, Behave (Cucumber...",
+        "published_at": "2024-05-02T16:30:00+0300"
+    },
+    {
+        "ID": "96536731",
+        "name": "Системный инженер мониторинга",
+        "link_to_vacancy": "https://hh.ru/vacancy/96536731",
+        "salary_from": 200000,
+        "salary_to": 0,
+        "requirements": "Опыт работы с аналогичным функционалом от 2 лет. Навыки написания скриптов для автоматизации прикладных и рутинных задач на Bash/<highlighttext>Python</highlighttext>...",
+        "published_at": "2024-05-02T12:51:09+0300"
+    },
+    {
+        "ID": "96991707",
+        "name": "ML-разработчик",
+        "link_to_vacancy": "https://hh.ru/vacancy/96991707",
+        "salary_from": 0,
+        "salary_to": 150000,
+        "requirements": "Умение работать с машинным обучением и компьютерным зрением. Уверенное знание <highlighttext>Python</highlighttext>, Java, Linux. Знание технологий нейросети, знание методов Transfer learning...",
+        "published_at": "2024-04-15T11:08:03+0300"
+    },
+    {
+        "ID": "97134746",
+        "name": "Младший специалист IT (База данных)",
+        "link_to_vacancy": "https://hh.ru/vacancy/97134746",
+        "salary_from": 54500,
+        "salary_to": 0,
+        "requirements": "Знание T-SQL (таблицы, представления, процедуры и функции). Знание <highlighttext>Python</highlighttext>, Api и Yandex Cloud будут преимуществом. Нацелен на профессиональный рост. ",
+        "published_at": "2024-04-16T15:49:19+0300"
+    },
+    {
+        "ID": "97608851",
+        "name": "Chief Technical Officer/CTO",
+        "link_to_vacancy": "https://hh.ru/vacancy/97608851",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Широкий кругозор и/или опыт работы с: CI/CD, VMWare, Openstack, Kubernetes, Docker, Atlassian, Ansible, Terraform, <highlighttext>Python</highlighttext>, Rancher, JS, React...",
+        "published_at": "2024-04-22T11:32:49+0300"
+    },
+    {
+        "ID": "97656723",
+        "name": "Project manager",
+        "link_to_vacancy": "https://hh.ru/vacancy/97656723",
+        "salary_from": 120000,
+        "salary_to": 250000,
+        "requirements": "Дружелюбность и хорошая коммуникация с командой. - Опыт управления IT проектами от 5 лет. - Наличие успешно завершенных коммерческих проектов (от 5...",
+        "published_at": "2024-04-22T19:58:29+0300"
+    },
+    {
+        "ID": "97736962",
+        "name": "Менеджер проектов",
+        "link_to_vacancy": "https://hh.ru/vacancy/97736962",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Продвинуто владеешь как минимум Excel и PowerPoint, знаешь основы SQL, BI, умеешь или готов научиться <highlighttext>Python</highlighttext>. Знаешь основы проектного управления...",
+        "published_at": "2024-04-23T16:04:35+0300"
+    },
+    {
+        "ID": "97980631",
+        "name": "Администратор Atlassian (Jira)",
+        "link_to_vacancy": "https://hh.ru/vacancy/97980631",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "...Debian, Ubuntu, CentOS. -Опыт работы с Service Desk системами. -Опыт работы с СУБД. -Опыт написания JQL, скриптов на Groovy, <highlighttext>Python</highlighttext>.",
+        "published_at": "2024-04-26T11:30:56+0300"
+    },
+    {
+        "ID": "98049253",
+        "name": "Сетевой инженер",
+        "link_to_vacancy": "https://hh.ru/vacancy/98049253",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Опыт работы с Linux-based операционными системами. Опыт написания скриптов на <highlighttext>Python</highlighttext>. Высокая степень самоорганизации. Умение расставлять приоритеты по задачам. ",
+        "published_at": "2024-04-27T09:47:29+0300"
+    },
+    {
+        "ID": "98066799",
+        "name": "Специалист систем видео и мониторинга",
+        "link_to_vacancy": "https://hh.ru/vacancy/98066799",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Владеете английским языком на уровне чтения и понимания технической документации. Имеете базовые навыки программирования (<highlighttext>Python</highlighttext>, PowerShell, etc.) и имеете опыт...",
+        "published_at": "2024-04-27T12:29:20+0300"
+    },
+    {
+        "ID": "98268320",
+        "name": "Специалист по тестированию на проникновение (pentest)",
+        "link_to_vacancy": "https://hh.ru/vacancy/98268320",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Понимание принципа работы современных средств защиты информации. Умение программировать на скриптовых языках (<highlighttext>Python</highlighttext>, JS, Bash, Powershell, ). Опыт работы в Linux...",
+        "published_at": "2024-05-02T17:32:21+0300"
+    },
+    {
+        "ID": "98341446",
+        "name": "Ведущий научный сотрудник",
+        "link_to_vacancy": "https://hh.ru/vacancy/98341446",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "...flow, change detection, SIFT, HOG, SVM, AdaBoost, etc), свёрточных нейронных сетей. Навыки построения эффективных алгоритмов. Опыт работы с C++, <highlighttext>Python</highlighttext>.",
+        "published_at": "2024-05-03T14:11:36+0300"
+    },
+    {
+        "ID": "90881552",
+        "name": "Менеджер по работе с блогерами (телеграм)",
+        "link_to_vacancy": "https://hh.ru/vacancy/90881552",
+        "salary_from": 50000,
+        "salary_to": 0,
+        "requirements": "Опыт работы с блогерами от 1 года. Опыт работы с лидогенерацией через телеграм. Знать тренды и ярких представителей. ",
+        "published_at": "2024-04-28T13:33:28+0300"
+    },
+    {
+        "ID": "95143878",
+        "name": "DevOps инженер",
+        "link_to_vacancy": "https://hh.ru/vacancy/95143878",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Облачные технологии, в т.ч. виртуализации и построения распределенных приложений (VMWare, Kubernetes, Docker, OpenShift, Tomcat, Nginx). Скриптовые языки (<highlighttext>Python</highlighttext>, Groovy...",
+        "published_at": "2024-04-15T18:14:00+0300"
+    },
+    {
+        "ID": "96205921",
+        "name": "Менеджер по аналитике клиентского опыта",
+        "link_to_vacancy": "https://hh.ru/vacancy/96205921",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Аналитикой и оценкой эффективности инициатив дирекции по Клиентскому опыту. Высшее образование. SQL (продвинутый уровень, навыки оптимизация и понимание ключевых принципов...",
+        "published_at": "2024-05-03T10:34:00+0300"
+    },
+    {
+        "ID": "97497331",
+        "name": "Куратор онлайн в IT-школу",
+        "link_to_vacancy": "https://hh.ru/vacancy/97497331",
+        "salary_from": 0,
+        "salary_to": 80000,
+        "requirements": "Ответственный и целеустремленный. Готов к удаленной работе. Любишь детей и умеешь находить с ними общий язык. Имеешь желание расти и...",
+        "published_at": "2024-05-02T12:14:58+0300"
+    },
+    {
+        "ID": "92031035",
+        "name": "Разработчик на Python в финансовую платформу",
+        "link_to_vacancy": "https://hh.ru/vacancy/92031035",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Работали с СУБД (например, PostgreSQL, Oracle, ClickHouse) и сложными SQL-запросами. Очень ответственно и аккуратно подходите к задачам. ",
+        "published_at": "2024-04-15T16:33:43+0300"
+    },
+    {
+        "ID": "95034136",
+        "name": "Game/Product Analyst (remote)",
+        "link_to_vacancy": "https://hh.ru/vacancy/95034136",
+        "salary_from": 150000,
+        "salary_to": 0,
+        "requirements": "...монетизации на основе данных и аналитики. Будет большим плюсом: –Умение работать с Appsflyer / Применение <highlighttext>Python</highlighttext> (базово) / Опыт работы в gamedev.",
+        "published_at": "2024-05-03T11:47:08+0300"
+    },
+    {
+        "ID": "97093090",
+        "name": ".Net Developer",
+        "link_to_vacancy": "https://hh.ru/vacancy/97093090",
+        "salary_from": 220000,
+        "salary_to": 280000,
+        "requirements": "Опыт работы с Azure. Опыт работы с RAML, Swagger. Знакомство с <highlighttext>Python</highlighttext>. Умение писать тесты. Понимание принципов и ценностей Agile. ",
+        "published_at": "2024-04-16T10:31:17+0300"
+    },
+    {
+        "ID": "98214774",
+        "name": "Системный администратор Linux",
+        "link_to_vacancy": "https://hh.ru/vacancy/98214774",
+        "salary_from": 240000,
+        "salary_to": 0,
+        "requirements": "Опыт работы с базами данных (MySQL, PostgreSQL, др.). Знания языков bash, <highlighttext>python</highlighttext> на уровне чтения/написания скриптов. Знание основ HTML...",
+        "published_at": "2024-05-02T10:30:17+0300"
+    },
+    {
+        "ID": "98217717",
+        "name": "Инженер данных",
+        "link_to_vacancy": "https://hh.ru/vacancy/98217717",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Образование высшее (специалитет, магистратура): приоритет для выпускников факультета прикладной математики и информатики; прикладной информатики; факультета компьютерных наук. Необходимый опыт работы...",
+        "published_at": "2024-05-02T10:53:47+0300"
+    },
+    {
+        "ID": "89667235",
+        "name": "Аналитик данных / Data Analyst",
+        "link_to_vacancy": "https://hh.ru/vacancy/89667235",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Навыки анализа большого количества данных. Умение работать в команде. Работа с ПО: google-инструменты (GDocs, GExcel и т.д.). ",
+        "published_at": "2024-04-17T13:11:37+0300"
+    },
+    {
+        "ID": "94603425",
+        "name": "Технический менеджер проекта / Руководитель группы разработки",
+        "link_to_vacancy": "https://hh.ru/vacancy/94603425",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Будет плюсом <highlighttext>python</highlighttext>, openTelemetry, influxdb. Знакомство с основными методологиями управления проектами и моделями жизненного цикла разработки ПО (Agile, Scrum, Kanban). ",
+        "published_at": "2024-04-09T08:34:39+0300"
+    },
+    {
+        "ID": "96546268",
+        "name": "Junior+/Middle Game Analyst",
+        "link_to_vacancy": "https://hh.ru/vacancy/96546268",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Уверенное знание математической статистики и теории вероятностей. Умение работать с большими объёмами данных. Искренний интерес к игровой индустрии. Знание <highlighttext>Python</highlighttext>...",
+        "published_at": "2024-04-09T17:29:48+0300"
+    },
+    {
+        "ID": "97000572",
+        "name": "Data analyst (remote)",
+        "link_to_vacancy": "https://hh.ru/vacancy/97000572",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Обязательно опыт работы в какой-либо из областей: финтех, банки, телеком, платежные системы. Отличное знание <highlighttext>Python</highlighttext> и использование библиотек. ",
+        "published_at": "2024-04-15T12:07:01+0300"
+    },
+    {
+        "ID": "97130551",
+        "name": "Junior Data Engineer",
+        "link_to_vacancy": "https://hh.ru/vacancy/97130551",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Уверенное владение SQL. Знание языка <highlighttext>Python</highlighttext>. Навыки работы с Linux-системами. Понимание работы в области обработки данных и разработки ETL...",
+        "published_at": "2024-05-01T15:12:02+0300"
+    },
+    {
+        "ID": "97821783",
+        "name": "DevOps",
+        "link_to_vacancy": "https://hh.ru/vacancy/97821783",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Знание языков общего назначения (<highlighttext>Python</highlighttext>, Bash, Ruby, Golang). Большой опыт работы с Docker и понимание его оркестраторов. Практический опыт работы...",
+        "published_at": "2024-04-24T14:56:47+0300"
+    },
+    {
+        "ID": "97882653",
+        "name": "Физик-исследователь/научный сотрудник",
+        "link_to_vacancy": "https://hh.ru/vacancy/97882653",
+        "salary_from": 150000,
+        "salary_to": 0,
+        "requirements": "Знание в области обработки аналоговых сигналов. Знание и опыт программирования (VB, <highlighttext>Python</highlighttext>, C, C++) с ориентацией на построение математических моделей...",
+        "published_at": "2024-04-25T10:44:15+0300"
+    },
+    {
+        "ID": "98086439",
+        "name": "Специалист по тестированию на проникновение (пентестер) Redteam",
+        "link_to_vacancy": "https://hh.ru/vacancy/98086439",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Умение искать уязвимости белым ящиком, читать код на одном или более языке: C#, Java, Node.js, PHP, <highlighttext>Python</highlighttext>, Ruby. -",
+        "published_at": "2024-04-27T16:41:07+0300"
+    },
+    {
+        "ID": "98206211",
+        "name": "Tech lead",
+        "link_to_vacancy": "https://hh.ru/vacancy/98206211",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Опыт программирования на Java (от 3 лет), C++, <highlighttext>Python</highlighttext>. Знание HTML, JavaScrip и CSS. Знание правил построения информационных систем. ",
+        "published_at": "2024-05-02T09:09:55+0300"
+    },
+    {
+        "ID": "98218540",
+        "name": "Middle Инженер-разработчик RTL",
+        "link_to_vacancy": "https://hh.ru/vacancy/98218540",
+        "salary_from": 250000,
+        "salary_to": 0,
+        "requirements": "Понимание алгоритмов сжатия видно (h.264). Опыт программирования на <highlighttext>Python</highlighttext>. Опыт синтеза под ASIC (logical, physical), опыт написания и отладки...",
+        "published_at": "2024-05-02T10:57:50+0300"
+    },
+    {
+        "ID": "89433786",
+        "name": "Python разработчик",
+        "link_to_vacancy": "https://hh.ru/vacancy/89433786",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Отличное знание <highlighttext>Python</highlighttext> 3 и опыт промышленной разработки на <highlighttext>Python</highlighttext> от трех лет. Опыт многопоточного и асинхронного программирования. ",
+        "published_at": "2024-04-12T13:03:46+0300"
+    },
+    {
+        "ID": "90301120",
+        "name": "Продуктовый аналитик ВКонтакте в команду ленты и рекомендаций",
+        "link_to_vacancy": "https://hh.ru/vacancy/90301120",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "С головой погрузитесь в data driven-подход и эксперименты. Мы рассчитываем, что вы: Имеете опыт работы в продуктовой аналитике. ",
+        "published_at": "2024-04-30T23:19:15+0300"
+    },
+    {
+        "ID": "92666059",
+        "name": "Функциональный архитектор проектов В2В",
+        "link_to_vacancy": "https://hh.ru/vacancy/92666059",
+        "salary_from": 150000,
+        "salary_to": 0,
+        "requirements": "Высшее техническое образование. Стаж по профилю (архитектор) не менее 2 лет, опыт управления проектами не менее 2 лет. ",
+        "published_at": "2024-04-27T08:39:27+0300"
+    },
+    {
+        "ID": "96978734",
+        "name": "Devops инженер",
+        "link_to_vacancy": "https://hh.ru/vacancy/96978734",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Имеешь опыт работы с базами данных и знаете SQL. Имеешь базовые знания <highlighttext>Python</highlighttext>. Имеешь базовые знания Groovy. Имеешь практический опыт...",
+        "published_at": "2024-04-15T09:34:12+0300"
+    },
+    {
+        "ID": "97109860",
+        "name": "Middle PHP Developer",
+        "link_to_vacancy": "https://hh.ru/vacancy/97109860",
+        "salary_from": 120000,
+        "salary_to": 180000,
+        "requirements": "PHP 8.1 (Symfony 5.4). <highlighttext>Python</highlighttext> 3.9 (Flask, RQ). Redis. Mysql. Docker. Supervisor.",
+        "published_at": "2024-04-16T12:35:09+0300"
+    },
+    {
+        "ID": "97447637",
+        "name": "Junior+/Middle Data Engineer",
+        "link_to_vacancy": "https://hh.ru/vacancy/97447637",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Умение писать SQL - запросы, минимальный опыт оптимизации запросов . Знания <highlighttext>Python</highlighttext> будут плюсом. Желание обучаться и развиваться. Понимание работы брокеров сообщений...",
+        "published_at": "2024-05-01T15:33:55+0300"
+    },
+    {
+        "ID": "97697014",
+        "name": "Data Scientist (Junior/Middle)",
+        "link_to_vacancy": "https://hh.ru/vacancy/97697014",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Английский: upper-intermediate и выше. Tools: увереннные знание <highlighttext>Python</highlighttext>; уверенные знания Excel and PowerPoint. Хорошие коммуникативные навыки, аналитичесикие способности, ориентированность...",
+        "published_at": "2024-05-02T10:28:19+0300"
+    },
+    {
+        "ID": "97941141",
+        "name": "Data Analyst",
+        "link_to_vacancy": "https://hh.ru/vacancy/97941141",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Уверенные знания статистики и A/B-тестирования. Отличное владение SQL. Знания <highlighttext>Python</highlighttext>. Опыт работы с BI-инструментами. Продуктовое мышление. ",
+        "published_at": "2024-04-25T21:58:06+0300"
+    },
+    {
+        "ID": "97969450",
+        "name": "DevOps Engineer (Нови-Сад)",
+        "link_to_vacancy": "https://hh.ru/vacancy/97969450",
+        "salary_from": 2000,
+        "salary_to": 2800,
+        "requirements": "Владение навыками Linux-администрирования, администрирования LEMP-стека. Опыт написания кода на Bash, <highlighttext>Python</highlighttext>. Имеет опыт написания полноценных ролей в Ansible...",
+        "published_at": "2024-04-26T09:35:30+0300"
+    },
+    {
+        "ID": "98181441",
+        "name": "Linux Application Administrator",
+        "link_to_vacancy": "https://hh.ru/vacancy/98181441",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Good level of English. Scripting language – Bash or <highlighttext>Python</highlighttext> (at least one is a big plus). Experience with Apache Tomcat...",
+        "published_at": "2024-05-01T14:28:41+0300"
+    },
+    {
+        "ID": "98245785",
+        "name": "Аналитик BI",
+        "link_to_vacancy": "https://hh.ru/vacancy/98245785",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Знание и опыт работы с SQL. Знание языка программирования <highlighttext>Python</highlighttext>. Опыт проектирования концептуальной, логической и физической модели данных. ",
+        "published_at": "2024-05-02T14:11:10+0300"
+    },
+    {
+        "ID": "94830024",
+        "name": "Senior Frontend developer",
+        "link_to_vacancy": "https://hh.ru/vacancy/94830024",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Будет плюсом: Опыт работы с Typescript. Владение техниками тестирования кода (в том числе BDD, TDD). Владение <highlighttext>python</highlighttext> (sanic / aiohttp), docker...",
+        "published_at": "2024-04-25T14:26:46+0300"
+    },
+    {
+        "ID": "96826857",
+        "name": "Инженер по автоматизации тестирования",
+        "link_to_vacancy": "https://hh.ru/vacancy/96826857",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Владение языком программирования <highlighttext>Python</highlighttext> на среднем уровне. Знание средств автоматизации тестирования pytest, allure, pexpect, requests. Знание принципов работы CI/CD...",
+        "published_at": "2024-04-12T15:40:47+0300"
+    },
+    {
+        "ID": "97338872",
+        "name": "Тестировщик ПО",
+        "link_to_vacancy": "https://hh.ru/vacancy/97338872",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Знание современных методологий тестирования. Начальные навыки программирования на C#, Java или <highlighttext>Python</highlighttext>.. Базовые понимания областей ИТ: администрирование сетей, рабочих станций...",
+        "published_at": "2024-04-26T09:59:46+0300"
+    },
+    {
+        "ID": "97998682",
+        "name": "Дежурный администратор в Систему быстрых платежей",
+        "link_to_vacancy": "https://hh.ru/vacancy/97998682",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Неполное высшее/Высшее образование (техническое как преимущество). Начальные навыки администрирования Linux (RedHat, CentOS). Базовые знания основ построения компьютерных сетей. ",
+        "published_at": "2024-04-26T14:43:11+0300"
+    },
+    {
+        "ID": "98082193",
+        "name": "Junior DevOps (АТС) specialist",
+        "link_to_vacancy": "https://hh.ru/vacancy/98082193",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Уверенное знание Jenkins. Опыт написания скриптов автоматизации на ansible, groovy/<highlighttext>python</highlighttext>. Уверенная работа с системами сборки на Maven/Gradle. ",
+        "published_at": "2024-04-27T15:43:00+0300"
+    },
+    {
+        "ID": "96527923",
+        "name": "Тестировщик (Астра Консалтинг)",
+        "link_to_vacancy": "https://hh.ru/vacancy/96527923",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Опыт тестирования unix-подобных операционных систем. Знание одного из языков программирования на базовом уровне, предпочтительно <highlighttext>Python</highlighttext>. Опыт работы с системами...",
+        "published_at": "2024-04-09T14:23:01+0300"
+    },
+    {
+        "ID": "96817129",
+        "name": "Web-разработчик",
+        "link_to_vacancy": "https://hh.ru/vacancy/96817129",
+        "salary_from": 50000,
+        "salary_to": 150000,
+        "requirements": "Опыт от 3-ёх лет в создании корпоративных сайтов, landing pages, интернет-магазинов, сервисов, CRM, информационных порталов или стартапов. ",
+        "published_at": "2024-04-12T14:01:43+0300"
+    },
+    {
+        "ID": "97033829",
+        "name": "Data Engineer / DevOps",
+        "link_to_vacancy": "https://hh.ru/vacancy/97033829",
+        "salary_from": 800000,
+        "salary_to": 1000000,
+        "requirements": "Опыт работы с базами данных PostgreSQL и Clickhouse. — Хорошее знание <highlighttext>Python</highlighttext>, практические знания SQL, оптимизация больших запросов. — Иметь опыт в...",
+        "published_at": "2024-05-03T16:30:09+0300"
+    },
+    {
+        "ID": "97713962",
+        "name": "Продуктовый аналитик",
+        "link_to_vacancy": "https://hh.ru/vacancy/97713962",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "Требуемый опыт: Уверенное написание SQL-запросов.",
+        "published_at": "2024-04-23T13:00:57+0300"
+    },
+    {
+        "ID": "97793431",
+        "name": "Data Scientist",
+        "link_to_vacancy": "https://hh.ru/vacancy/97793431",
+        "salary_from": 0,
+        "salary_to": 0,
+        "requirements": "опыт работы в области Data Science от 1 года. - хорошее знание алгоритмов машинного обучения. - <highlighttext>Python</highlighttext>, библиотеки для работы с ML. - ",
+        "published_at": "2024-04-24T10:21:36+0300"
+    }
+]
