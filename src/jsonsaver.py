@@ -4,8 +4,8 @@ from abc import ABC, abstractmethod
 from config import path_to_file
 
 
-class Parser(ABC):
-    """Абстрактный класс для добавления/удаления вакансий в JSON файл"""
+class SaverInToFile(ABC):
+    """Абстрактный класс для добавления/удаления вакансий в  файл"""
 
     @staticmethod
     @abstractmethod
@@ -26,24 +26,24 @@ class Parser(ABC):
         pass
 
 
-class JSONSaver(Parser):
+class JSONSaver(SaverInToFile):
     """Класс для добавления вакансий в JSON файл"""
 
     @staticmethod
-    def add_json(vacancies):
+    def add_json(vacancies) -> None:
         """Метод для записи вакансий в файл JSON"""
 
         with open(path_to_file, mode='w', encoding='utf-8') as vacancies_json:
             json.dump([v.to_json() for v in vacancies], vacancies_json, indent=4, ensure_ascii=False)
 
     @staticmethod
-    def update_json(vacancies):
+    def update_json(vacancies) -> None:
         """Метод для добавления вакансий в файл JSON"""
         with open(path_to_file, mode='a', encoding='utf-8') as vacancies_json:
             json.dump([v.to_json() for v in vacancies], vacancies_json, indent=4, ensure_ascii=False)
 
     @staticmethod
-    def del_vacancies(vacancies):
+    def del_vacancies(vacancies) -> None:
         """Метод для удаления вакансий из файла JSON"""
         with open(path_to_file, mode='a', encoding='utf-8') as vacancies_json:
             json.dump([v.to_json() for v in vacancies], vacancies_json, indent=4, ensure_ascii=False)
