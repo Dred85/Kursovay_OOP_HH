@@ -32,12 +32,13 @@ def user_interaction() -> None:
             print(v)
 
         q_sort_vacansies_salary = input(
-            'Отсортировать вакансии по зарплате - Да, перейти к другим вариантам фильтрации - нажмите Enter ')
+            '''Отсортировать вакансии по зарплате и добавить отсортированные вакансии в файл vacancies_update.json- Да, 
+перейти к другим вариантам фильтрации - нажмите Enter ''')
         if q_sort_vacansies_salary.lower() == 'да':
             sort_vacansies_salary = sorted(date_sorted_vacancies[:quantity_profession], key=lambda x: x.salary_from,
                                            reverse=True)
             for v in sort_vacansies_salary:
-                # Добавить отсортированные вакансии в файл json
+                # Добавить отсортированные вакансии в файл vacancies_update.json
                 JSONSaver.update_json(v)
                 print(v)
 
@@ -52,6 +53,8 @@ def user_interaction() -> None:
             key_word_vacansies = input('Введите ключевое слово в наименовании вакансии: ')
             list_name_sorted_vacancies = Vacancy.get_info_json_requirements(list_vacancies, key_word_vacansies)
             for v in list_name_sorted_vacancies:
+                # Добавить отсортированные вакансии в файл vacancies_update.json
+                JSONSaver.update_json(v)
                 print(v)
 
         else:
@@ -60,6 +63,8 @@ def user_interaction() -> None:
             list_requirements_sorted_vacancies = Vacancy.get_info_json_requirements(list_vacancies,
                                                                                     key_word_requirements)
             for v in list_requirements_sorted_vacancies:
+                # Добавить отсортированные вакансии в файл vacancies_update.json
+                JSONSaver.update_json(v)
                 print(v)
     else:
         print('До скорых встреч')

@@ -1,5 +1,14 @@
 [
     {
+        "ID": "98367192",
+        "name": "Java Developer-программист/стажер",
+        "link_to_vacancy": "https://hh.ru/vacancy/98367192",
+        "salary_from": 70000,
+        "salary_to": 80000,
+        "requirements": "Понимание принципов ООП, понимание алгоритмов и структур данных, знание <highlighttext>Java</highlighttext> Core. Обязательное знание основ <highlighttext>Java</highlighttext> EE (Servlets, jsp). ",
+        "published_at": "2024-05-03T18:59:54+0300"
+    },
+    {
         "ID": "98365231",
         "name": "Java Developer-программист/стажер",
         "link_to_vacancy": "https://hh.ru/vacancy/98365231",
@@ -9,84 +18,84 @@
         "published_at": "2024-05-03T18:22:59+0300"
     },
     {
-        "ID": "95957320",
-        "name": "Разработчик Java,С#,Go/Системный архитектор",
-        "link_to_vacancy": "https://hh.ru/vacancy/95957320",
+        "ID": "98368053",
+        "name": "Java-разработчик (SE) в команду SetLoyalty",
+        "link_to_vacancy": "https://hh.ru/vacancy/98368053",
         "salary_from": 0,
         "salary_to": 0,
-        "requirements": "Опыт проектирования интеграционных решений. Опыт разработки высоконагруженных многокомпонентных систем на <highlighttext>Java</highlighttext>, С#, Go. Знание и опыт использования нотаций UML, BPMN...",
-        "published_at": "2024-05-03T17:00:35+0300"
+        "requirements": "Опыт коммерческой разработки в высоконагруженном проекте на языке <highlighttext>Java</highlighttext> от 2 лет. Опыт работы с <highlighttext>Java</highlighttext> SE. Опыт использования JUnit...",
+        "published_at": "2024-05-03T19:17:22+0300"
     },
     {
-        "ID": "91935893",
-        "name": "ETL-разработчик",
-        "link_to_vacancy": "https://hh.ru/vacancy/91935893",
+        "ID": "98367192",
+        "name": "Java Developer-программист/стажер",
+        "link_to_vacancy": "https://hh.ru/vacancy/98367192",
+        "salary_from": 70000,
+        "salary_to": 80000,
+        "requirements": "Понимание принципов ООП, понимание алгоритмов и структур данных, знание <highlighttext>Java</highlighttext> Core. Обязательное знание основ <highlighttext>Java</highlighttext> EE (Servlets, jsp). ",
+        "published_at": "2024-05-03T18:59:54+0300"
+    },
+    {
+        "ID": "98365231",
+        "name": "Java Developer-программист/стажер",
+        "link_to_vacancy": "https://hh.ru/vacancy/98365231",
+        "salary_from": 70000,
+        "salary_to": 80000,
+        "requirements": "Понимание принципов ООП, понимание алгоритмов и структур данных, знание <highlighttext>Java</highlighttext> Core. Обязательное знание основ <highlighttext>Java</highlighttext> EE (Servlets, jsp). ",
+        "published_at": "2024-05-03T18:22:59+0300"
+    },
+    {
+        "ID": "98368053",
+        "name": "Java-разработчик (SE) в команду SetLoyalty",
+        "link_to_vacancy": "https://hh.ru/vacancy/98368053",
         "salary_from": 0,
         "salary_to": 0,
-        "requirements": "...SSL/TLS, SOAP, REST. Приветствуется наличие опыта интеграции посредством этих механизмов. Знание и умение работать с основными технологиями <highlighttext>Java</highlighttext> SE.",
-        "published_at": "2024-05-03T15:53:26+0300"
+        "requirements": "Опыт коммерческой разработки в высоконагруженном проекте на языке <highlighttext>Java</highlighttext> от 2 лет. Опыт работы с <highlighttext>Java</highlighttext> SE. Опыт использования JUnit...",
+        "published_at": "2024-05-03T19:17:22+0300"
     },
     {
-        "ID": "96748127",
-        "name": "Разработчик (риск-технолог) в Отдел разработки систем принятия кредитного решения",
-        "link_to_vacancy": "https://hh.ru/vacancy/96748127",
+        "ID": "98362813",
+        "name": "Преподаватель IT-дисциплин",
+        "link_to_vacancy": "https://hh.ru/vacancy/98362813",
         "salary_from": 0,
         "salary_to": 0,
-        "requirements": "...с XML\\JSON\\CSV; уверенные знания MS Office\\Windows; знание принципов ЯООП \\ C++ - <highlighttext>Java</highlighttext>, Python, R, FICO, NBSM, PowerCurve- приветствуется.",
-        "published_at": "2024-05-03T14:28:42+0300"
+        "requirements": "Высшее или не полное высшее (с 3 курса) педагогическое образование или в сфере IT, дизайна или смежных областях. ",
+        "published_at": "2024-05-03T17:49:39+0300"
     },
     {
-        "ID": "98343239",
-        "name": "Системный аналитик (home office)",
-        "link_to_vacancy": "https://hh.ru/vacancy/98343239",
+        "ID": "98361717",
+        "name": "Инженер сопровождения-внедрения",
+        "link_to_vacancy": "https://hh.ru/vacancy/98361717",
         "salary_from": 0,
         "salary_to": 0,
-        "requirements": "Высшее профильное образование (информатика/математика/программирование). Знание SQL. Желательно знание <highlighttext>Java</highlighttext>/Groovy. Грамотная устная и письменная речь. Способность вежливо, доброжелательно...",
-        "published_at": "2024-05-03T14:24:32+0300"
+        "requirements": "Быть готовым работать по сервисной модели ITSM/ITIL. Опыт сопровождения и внедрения <highlighttext>Java</highlighttext> приложений. Знание сетевых технологий, понимание протоколов TCP...",
+        "published_at": "2024-05-03T17:36:57+0300"
     },
     {
-        "ID": "97033829",
-        "name": "Data Engineer / DevOps",
-        "link_to_vacancy": "https://hh.ru/vacancy/97033829",
-        "salary_from": 800000,
-        "salary_to": 1000000,
-        "requirements": "Опыт работы с базами данных PostgreSQL и Clickhouse. — Хорошее знание <highlighttext>Python</highlighttext>, практические знания SQL, оптимизация больших запросов. — Иметь опыт в...",
-        "published_at": "2024-05-03T16:30:09+0300"
-    },
-    {
-        "ID": "98328757",
-        "name": "Инженер-разработчик FPGA",
-        "link_to_vacancy": "https://hh.ru/vacancy/98328757",
-        "salary_from": 45000,
-        "salary_to": 70000,
-        "requirements": "Знание языков Verilog и/или SystemVerilog. Знакомство со скриптовыми языками (perl/<highlighttext>python</highlighttext>/tcl/shell) и make. Опыт работы с системой...",
-        "published_at": "2024-05-03T12:29:48+0300"
-    },
-    {
-        "ID": "98360623",
-        "name": "Senior Data Scientist",
-        "link_to_vacancy": "https://hh.ru/vacancy/98360623",
+        "ID": "97751251",
+        "name": "Middle+ DevOps [NUUM]",
+        "link_to_vacancy": "https://hh.ru/vacancy/97751251",
         "salary_from": 0,
         "salary_to": 0,
-        "requirements": "Знание методов математической статистики, ML, оптимизации. Свободное владение <highlighttext>Python</highlighttext> и наиболее популярными библиотеками для работы с данными/моделирования (pandas, numpy...",
-        "published_at": "2024-05-03T17:22:04+0300"
+        "requirements": "...работы с базами данных PostgreSQL, ClickHouse, Redis. Знание принципов работы сети (routing&switching). Умение читать код: Node.JS, kotlin, TypeScrypt, <highlighttext>java</highlighttext>.",
+        "published_at": "2024-04-24T10:56:57+0300"
     },
     {
-        "ID": "98341446",
-        "name": "Ведущий научный сотрудник",
-        "link_to_vacancy": "https://hh.ru/vacancy/98341446",
+        "ID": "94187914",
+        "name": "Ведущий инженер по тестированию",
+        "link_to_vacancy": "https://hh.ru/vacancy/94187914",
         "salary_from": 0,
         "salary_to": 0,
-        "requirements": "...flow, change detection, SIFT, HOG, SVM, AdaBoost, etc), свёрточных нейронных сетей. Навыки построения эффективных алгоритмов. Опыт работы с C++, <highlighttext>Python</highlighttext>.",
-        "published_at": "2024-05-03T14:11:36+0300"
+        "requirements": "Практический опыт тестирования корпоративных ИС. Опыт работы с Linux. Опыт разработки приветствуется. Базовые знания в <highlighttext>java</highlighttext> приветствуются. Опыт автоматизации приветствуется.",
+        "published_at": "2024-04-27T17:07:54+0300"
     },
     {
-        "ID": "93609042",
-        "name": "QA engineer (telecom)",
-        "link_to_vacancy": "https://hh.ru/vacancy/93609042",
+        "ID": "82852175",
+        "name": "Разработчик банковского ПО",
+        "link_to_vacancy": "https://hh.ru/vacancy/82852175",
         "salary_from": 0,
         "salary_to": 0,
-        "requirements": "Знания в сфере телеком и/или в GSM. Знание <highlighttext>Python</highlighttext>, т.к. мы используем его при тестировании наших сервисов. ",
-        "published_at": "2024-05-03T13:32:13+0300"
+        "requirements": "Умение работать с техническим заданием в качестве разработчика программного обеспечения. Будет плюсом опыт создания <highlighttext>java</highlighttext>-приложений, навыки работы glassfish, использование...",
+        "published_at": "2024-04-25T16:48:39+0300"
     }
 ]
