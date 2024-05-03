@@ -37,6 +37,8 @@ def user_interaction() -> None:
             sort_vacansies_salary = sorted(date_sorted_vacancies[:quantity_profession], key=lambda x: x.salary_from,
                                            reverse=True)
             for v in sort_vacansies_salary:
+                # Добавить отсортированные вакансии в файл json
+                JSONSaver.update_json(v)
                 print(v)
 
     # Спрашиваю у пользователя хочет ли он отфильтровать изначальные вакансии по названию или по требованиям?
