@@ -37,7 +37,11 @@ def user_interaction() -> None:
             sort_vacansies_salary = sorted(date_sorted_vacancies[:quantity_profession], key=lambda x: x.salary_from,
                                            reverse=True)
             for v in sort_vacansies_salary:
+
+                JSONSaver.update_json(v)
                 print(v)
+
+
 
     # Спрашиваю у пользователя хочет ли он отфильтровать изначальные вакансии по названию или по требованиям?
     q_filter_vacansies_name = input(
@@ -51,6 +55,7 @@ def user_interaction() -> None:
             list_name_sorted_vacancies = Vacancy.get_info_json_requirements(list_vacancies, key_word_vacansies)
             for v in list_name_sorted_vacancies:
                 print(v)
+            JSONSaver.update_json(list_name_sorted_vacancies)
 
         else:
             # Спрашиваю у пользователя ключевое слово для сортировки по описанию вакансии
@@ -58,7 +63,9 @@ def user_interaction() -> None:
             list_requirements_sorted_vacancies = Vacancy.get_info_json_requirements(list_vacancies,
                                                                                     key_word_requirements)
             for v in list_requirements_sorted_vacancies:
+
                 print(v)
+            JSONSaver.update_json(list_requirements_sorted_vacancies)
     else:
         print('До скорых встреч')
 
