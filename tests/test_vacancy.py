@@ -84,17 +84,17 @@ def test_repr(vacancy1):
 
 
 def test_lt(vacancy1, vacancy2):
-    """Тестирую переопределенный дандер метод __lt__"""
+    """Тестирую переопределенный дандер метод __lt__ c двумя экземплярами класса"""
     assert vacancy1 < vacancy2
 
 
 def test_lt_int(vacancy1):
-    """Тестирую переопределенный дандер метод __lt__"""
+    """Тестирую переопределенный дандер метод __lt__ с числом"""
     assert (vacancy1 < 10) == False
 
 
 def test_lt_raise(vacancy1):
-    """Тестирую переопределенный дандер метод __lt__"""
+    """Тестирую переопределенный дандер метод __lt__ со строкой(д.б. исключение TypeError)"""
     with pytest.raises(TypeError) as e_info:
         vacancy1 < '10'
 
