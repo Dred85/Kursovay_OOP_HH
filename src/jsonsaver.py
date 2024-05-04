@@ -37,6 +37,13 @@ class JSONSaver(SaverInToFile):
             json.dump([v.to_json() for v in vacancies], vacancies_json, indent=4, ensure_ascii=False)
 
     @staticmethod
+    def add_update_json() -> None:
+        """Метод для записи вакансий в файл JSON"""
+
+        with open(path_to_file_update, mode='w', encoding='utf-8') as vacancies_json:
+            json.dump([], vacancies_json, indent=4, ensure_ascii=False)
+
+    @staticmethod
     def update_json(vacancies) -> None:
         """Метод для добавления вакансий в файл JSON"""
         with open(path_to_file_update, 'r', encoding='utf-8') as f:
