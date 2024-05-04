@@ -22,7 +22,7 @@ class SaverInToFile(ABC):
     @staticmethod
     @abstractmethod
     def del_vacancies(vacancies):
-        """Абстрактный метод для удаления вакансий из файла JSON"""
+        """Абстрактный метод для удаления вакансии из файла JSON"""
         pass
 
 
@@ -56,7 +56,7 @@ class JSONSaver(SaverInToFile):
 
     @staticmethod
     def del_vacancies(id_vacancy) -> None:
-        """Метод для удаления вакансий из файла vacavcies_update.json"""
+        """Метод для удаления вакансии из файла vacavcies_update.json по ID"""
 
         with open(path_to_file_update, 'r', encoding='utf-8') as f:  # открыли файл
             data_update = json.load(f)  # загнали все из файла в переменную
@@ -67,6 +67,6 @@ class JSONSaver(SaverInToFile):
                     print('Запись удалена')
 
         print(id_vacancy)
-        print('А теперь записываем итоговый файл')
+        print('Записываев итоговый файл')
         with open(path_to_file_update, 'w', encoding='utf-8') as f:
             json.dump(data_update, f, indent=4, ensure_ascii=False)
