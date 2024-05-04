@@ -24,6 +24,38 @@ def vacancy2():
                    "2018-04-17T13:33:10+0300")
 
 
+@pytest.fixture
+def vacancy_list():
+    return [
+        Vacancy(
+            "97338839",
+            "Senior java разработчик",
+            "https://hh.ru/vacancy/97338839",
+            0,
+            570000,
+            "Опыт разработки на <highlighttext>Java</highlighttext> не менее 3 лет. Понимание принципов ООП, SOLID. Уверенное знание Spring, Hibernate. Знание SQL, навыки работы...",
+            "2020-04-18T15:03:00+0300"
+    ),
+        Vacancy(
+            "98209966",
+            "Программист-разработчик",
+            "https://hh.ru/vacancy/98209966",
+            200000,
+            500000,
+            "Программирование: Python, R, или <highlighttext>Java</highlighttext>. Работа с данными: Понимание базовых принципов баз данных и языка SQL также может быть полезным. ",
+            "2024-05-02T09:49:03+0300"
+    ),
+        Vacancy(
+            "98196422",
+            "Frontend Developer",
+            "https://hh.ru/vacancy/98196422",
+            800,
+            1200,
+            "Знание модульности javascript/typescript. Иметь навыки кросс-браузерной верстки, понимать как работает рендеринг. Уверенные знания html и css (less, sass). ",
+            "2023-05-02T06:31:04+0300"
+    )]
+
+
 def test_init(vacancy1):
     """Тестирую конструктор класса дандер метод __init__"""
     assert vacancy1.id == "97223662"
@@ -64,3 +96,9 @@ def test_to_json(vacancy1):
                                   'salary_to': 500000,
                                   'requirements': 'Знание Python',
                                   'published_at': '2024-04-17T13:33:10+0300'}
+
+
+def test_get_info_json_date(vacancy_list):
+    assert [v.published_at for v in Vacancy.get_info_json_date(vacancy_list)] == ["2024-05-02T09:49:03+0300",
+                                                                                     "2023-05-02T06:31:04+0300",
+                                                                                     "2020-04-18T15:03:00+0300"]
