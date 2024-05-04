@@ -8,7 +8,7 @@ def user_interaction() -> None:
 
     profession = input("Введите профессию для поиска: ")
 
-    # Создаю пустой файл add_update_json для записи туду отсортированных вакансий
+    # Создаю пустой файл add_update_json для записи туда отсортированных вакансий
     JSONSaver.add_update_json()
 
 
