@@ -29,11 +29,11 @@ def vacancy_list():
     return [
         Vacancy(
             "97338839",
-            "Senior java разработчик",
+            "Senior Python разработчик",
             "https://hh.ru/vacancy/97338839",
             0,
             570000,
-            "Опыт разработки на <highlighttext>Java</highlighttext> не менее 3 лет. Понимание принципов ООП, SOLID. Уверенное знание Spring, Hibernate. Знание SQL, навыки работы...",
+            "Опыт разработки на <highlighttext>Java</highlighttext> не менее 3 лет. ",
             "2020-04-18T15:03:00+0300"
     ),
         Vacancy(
@@ -42,16 +42,16 @@ def vacancy_list():
             "https://hh.ru/vacancy/98209966",
             200000,
             500000,
-            "Программирование: Python, R, или <highlighttext>Java</highlighttext>. Работа с данными: Понимание базовых принципов баз данных и языка SQL также может быть полезным. ",
+            "Программирование: Python, Go",
             "2024-05-02T09:49:03+0300"
     ),
         Vacancy(
             "98196422",
-            "Frontend Developer",
+            "java",
             "https://hh.ru/vacancy/98196422",
             800,
             1200,
-            "Знание модульности javascript/typescript. Иметь навыки кросс-браузерной верстки, понимать как работает рендеринг. Уверенные знания html и css (less, sass). ",
+            "Знание модульности javascript",
             "2023-05-02T06:31:04+0300"
     )]
 
@@ -102,3 +102,10 @@ def test_get_info_json_date(vacancy_list):
     assert [v.published_at for v in Vacancy.get_info_json_date(vacancy_list)] == ["2024-05-02T09:49:03+0300",
                                                                                      "2023-05-02T06:31:04+0300",
                                                                                      "2020-04-18T15:03:00+0300"]
+
+
+def test_get_info_json_name(vacancy_list):
+    assert [v.name for v in Vacancy.get_info_json_name(vacancy_list, 'java')] == ["java"]
+
+def test_get_info_json_requirements(vacancy_list):
+    assert [v.requirements for v in Vacancy.get_info_json_requirements(vacancy_list, 'Python')] == ["Программирование: Python, Go"]
