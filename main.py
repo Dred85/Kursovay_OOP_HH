@@ -82,5 +82,6 @@ def user_interaction() -> None:
             print('До скорых встреч')
             break
 
+
 if __name__ == "__main__":
     user_interaction()

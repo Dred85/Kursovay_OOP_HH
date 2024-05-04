@@ -24,6 +24,7 @@ class HeadHunterAPI(Parcer):
         super().__init__()
 
     def load_vacancies(self, keyword: str) -> list:
+        """Метод для получения данных с сайта """
         self.params['text'] = keyword
         while self.params.get('page') != 20:
             response = requests.get(self.url, headers=self.headers, params=self.params)
