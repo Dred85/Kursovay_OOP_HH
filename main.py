@@ -29,7 +29,7 @@ def user_interaction() -> None:
         for v in date_sorted_vacancies:
             print(v)
 
-        quantity_profession = int(input("Укажите сколько отсортированных по времени вакансий оставить для просмотра? "))
+        quantity_profession = int(input("Укажите сколько отсортированных по дате вакансий оставить для просмотра? "))
 
         for v in date_sorted_vacancies[:quantity_profession]:
             print(v)
