@@ -8,6 +8,11 @@ def user_interaction() -> None:
 
     profession = input("Введите профессию для поиска: ")
 
+    # Создаю пустой файл add_update_json для записи туду отсортированных вакансий
+    JSONSaver.add_update_json()
+
+
+
     # Создаю объект класса HeadHunterAPI
     hh_url = HeadHunterAPI()
 
@@ -45,7 +50,7 @@ def user_interaction() -> None:
     # Спрашиваю у пользователя хочет ли он отфильтровать изначальные вакансии по названию или по требованиям?
     q_filter_vacansies_name = input(
         '''Отфильтровать изначальный список вакансий по названию или по требованиями и 
-        добавить отсортированные вакансии в файл vacancies_update.json-(Да/Нет)? ''')
+добавить отсортированные вакансии в файл vacancies_update.json-(Да/Нет)? ''')
     if q_filter_vacansies_name.lower() == 'да':
         # Спрашиваю у пользователя по чему конкретно будем сортировать
         q_filter_vacansies_name_or_requirements = input('Фильтруем по названию или по требованиям (Н/Т)? ')
