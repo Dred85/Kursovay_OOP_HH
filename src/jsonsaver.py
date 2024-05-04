@@ -67,6 +67,6 @@ class JSONSaver(SaverInToFile):
                     print('Запись удалена')
 
         print(id_vacancy)
-        print('Записываев итоговый файл')
+        print('Записываем итоговый файл')
         with open(path_to_file_update, 'w', encoding='utf-8') as f:
             json.dump(data_update, f, indent=4, ensure_ascii=False)

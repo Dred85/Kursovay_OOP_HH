@@ -73,13 +73,14 @@ def user_interaction() -> None:
     else:
         print('вы можете удалить вакансию')
 
-    q_vacancy_delete = input("Хотите удалить вакансию по ID? (Да/Нет): ")
-    if q_vacancy_delete.lower() == 'да':
-        id_vacancy = input("Введите ID вакансии: ")
-        JSONSaver.del_vacancies(id_vacancy)
-    else:
-        print('До скорых встреч')
-
+    while True:
+        q_vacancy_delete = input("Хотите удалить вакансию по ID? (Да/Нет): ")
+        if q_vacancy_delete.lower() == 'да':
+            id_vacancy = input("Введите ID вакансии: ")
+            JSONSaver.del_vacancies(id_vacancy)
+        else:
+            print('До скорых встреч')
+            break
 
 if __name__ == "__main__":
     user_interaction()
