@@ -87,6 +87,10 @@ def test_lt(vacancy1, vacancy2):
     """Тестирую переопределенный дандер метод __lt__"""
     assert vacancy1 < vacancy2
 
+def test_lt_int(vacancy1):
+    """Тестирую переопределенный дандер метод __lt__"""
+    assert (vacancy1 < 10) == False
+
 
 def test_to_json(vacancy1):
     assert vacancy1.to_json() == {'ID': '97223662',

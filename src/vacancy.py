@@ -80,7 +80,12 @@ class Vacancy(VacanciesAbstract):
 
     def __lt__(self, other):
         """Метод позволяет использовать оператор меньше (<) для сравнения объектов этого класса"""
-        return self.salary_from < other.salary_from
+        if isinstance(other, Vacancy):
+            return self.salary_from < other.salary_from
+        elif isinstance(other, (int, float)):
+            return self.salary_from < other
+        else:
+            raise TypeError("Можно сравнивать только экземпляры класса Vacancy")
 
     def to_json(self):
         """Метод для подготовки информации к записи в файл JSON"""
