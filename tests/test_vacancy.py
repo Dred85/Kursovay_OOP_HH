@@ -35,7 +35,7 @@ def vacancy_list():
             570000,
             "Опыт разработки на <highlighttext>Java</highlighttext> не менее 3 лет. ",
             "2020-04-18T15:03:00+0300"
-    ),
+        ),
         Vacancy(
             "98209966",
             "Программист-разработчик",
@@ -44,7 +44,7 @@ def vacancy_list():
             500000,
             "Программирование: Python, Go",
             "2024-05-02T09:49:03+0300"
-    ),
+        ),
         Vacancy(
             "98196422",
             "java",
@@ -53,7 +53,7 @@ def vacancy_list():
             1200,
             "Знание модульности javascript",
             "2023-05-02T06:31:04+0300"
-    )]
+        )]
 
 
 def test_init(vacancy1):
@@ -88,6 +88,17 @@ def test_lt(vacancy1, vacancy2):
     assert vacancy1 < vacancy2
 
 
+def test_lt_int(vacancy1):
+    """Тестирую переопределенный дандер метод __lt__"""
+    assert (vacancy1 < 10) == False
+
+
+def test_lt_raise(vacancy1):
+    """Тестирую переопределенный дандер метод __lt__"""
+    with pytest.raises(TypeError) as e_info:
+        vacancy1 < '10'
+
+
 def test_to_json(vacancy1):
     assert vacancy1.to_json() == {'ID': '97223662',
                                   'name': 'Full stack developer (angular + java)',
@@ -100,12 +111,14 @@ def test_to_json(vacancy1):
 
 def test_get_info_json_date(vacancy_list):
     assert [v.published_at for v in Vacancy.get_info_json_date(vacancy_list)] == ["2024-05-02T09:49:03+0300",
-                                                                                     "2023-05-02T06:31:04+0300",
-                                                                                     "2020-04-18T15:03:00+0300"]
+                                                                                  "2023-05-02T06:31:04+0300",
+                                                                                  "2020-04-18T15:03:00+0300"]
 
 
 def test_get_info_json_name(vacancy_list):
     assert [v.name for v in Vacancy.get_info_json_name(vacancy_list, 'java')] == ["java"]
 
+
 def test_get_info_json_requirements(vacancy_list):
-    assert [v.requirements for v in Vacancy.get_info_json_requirements(vacancy_list, 'Python')] == ["Программирование: Python, Go"]
+    assert [v.requirements for v in Vacancy.get_info_json_requirements(vacancy_list, 'Python')] == [
+        "Программирование: Python, Go"]
