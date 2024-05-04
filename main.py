@@ -29,7 +29,7 @@ def user_interaction() -> None:
         for v in date_sorted_vacancies:
             print(v)
 
-        quantity_profession = int(input("Укажите сколько отсортированных по времени вакансий оставить для просмотра? "))
+        quantity_profession = int(input("Укажите сколько отсортированных по дате вакансий оставить для просмотра? "))
 
         for v in date_sorted_vacancies[:quantity_profession]:
             print(v)
@@ -47,7 +47,7 @@ def user_interaction() -> None:
 
     # Спрашиваю у пользователя хочет ли он отфильтровать изначальные вакансии по названию или по требованиям?
     q_filter_vacansies_name = input(
-        '''Отфильтровать изначальный список вакансий по названию или по требованиями и 
+        '''Отфильтровать изначальный список вакансий по названию или по требованиям и 
 добавить отсортированные вакансии в файл vacancies_update.json-(Да/Нет)? ''')
     if q_filter_vacansies_name.lower() == 'да':
         # Спрашиваю у пользователя по чему конкретно будем сортировать
