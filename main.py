@@ -11,8 +11,6 @@ def user_interaction() -> None:
     # Создаю пустой файл add_update_json для записи туда отсортированных вакансий
     JSONSaver.add_update_json()
 
-
-
     # Создаю объект класса HeadHunterAPI
     hh_url = HeadHunterAPI()
 
