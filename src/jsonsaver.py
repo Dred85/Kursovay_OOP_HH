@@ -60,13 +60,11 @@ class JSONSaver(SaverInToFile):
 
         with open(path_to_file_update, 'r', encoding='utf-8') as f:  # открыли файл
             data_update = json.load(f)  # загнали все из файла в переменную
-            print(data_update)
             print(f'Запись c ID: {id_vacancy} будет удалена')
             for v in data_update:
                 if v['ID'] == id_vacancy:
                     data_update.pop(data_update.index(v))
                     print('Запись удалена')
-
 
         print(id_vacancy)
         print('А теперь записываем итоговый файл')
