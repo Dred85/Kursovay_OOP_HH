@@ -31,7 +31,7 @@ class JSONSaver(SaverInToFile):
 
     @staticmethod
     def add_json(vacancies) -> None:
-        """Метод для записи вакансий в файл JSON"""
+        """Метод для записи вакансий в файл vacancies_all.json"""
 
         with open(path_to_file_new, mode='w', encoding='utf-8') as vacancies_json:
             json.dump([v.to_json() for v in vacancies], vacancies_json, indent=4, ensure_ascii=False)
@@ -45,7 +45,7 @@ class JSONSaver(SaverInToFile):
 
     @staticmethod
     def update_json(vacancies) -> None:
-        """Метод для добавления вакансий в файл JSON"""
+        """Метод для добавления вакансий в файл vacancies_update.json"""
         with open(path_to_file_update, 'r', encoding='utf-8') as f:
             data = json.load(f)
             # vacancies.to_json() - вернет словарь
@@ -54,31 +54,21 @@ class JSONSaver(SaverInToFile):
         with open(path_to_file_update, 'w', encoding='utf-8') as f:
             json.dump(data_update, f, indent=4, ensure_ascii=False)
 
-
-        # with open(path_to_file_update, mode='a', encoding='utf-8') as vacancies_json:
-        #     json.dump([vacancies_json.update(v.to_json()) for v in vacancies], vacancies_json, indent=4, ensure_ascii=False)
-
     @staticmethod
-    def del_vacancies(vacancies) -> None:
-        """Метод для удаления вакансий из файла JSON"""
-        with open(path_to_file_new, mode='a', encoding='utf-8') as vacancies_json:
-            json.dump([v.to_json() for v in vacancies], vacancies_json, indent=4, ensure_ascii=False)
+    def del_vacancies(id_vacancy) -> None:
+        """Метод для удаления вакансий из файла vacavcies_update.json"""
 
-        user_for_del = input('Введите id удаляемой вакансии\n')
-        print(user_for_del)
-        with open(path_to_file_new, 'r', encoding='utf-8') as f:  # открыли файл
-            data = json.load(f)  # загнали все из файла в переменную
-        minimal = 0
-        for txt in data['id']:
-            print('Запись c id:', minimal)
+        with open(path_to_file_update, 'r', encoding='utf-8') as f:  # открыли файл
+            data_update = json.load(f)  # загнали все из файла в переменную
+            print(data_update)
+            print(f'Запись c ID: {id_vacancy} будет удалена')
+            for v in data_update:
+                if v['ID'] == id_vacancy:
+                    data_update.pop(data_update.index(v))
+                    print('Запись удалена')
 
-            if txt['name'] == user_for_del:
-                print('Запись будет удалена')
-                data['personal'].pop(minimal)
 
-            minimal = minimal + 1
-        print('Итоговый результат: ')
-        print(data)
+        print(id_vacancy)
         print('А теперь записываем итоговый файл')
-        with open('personal.json', 'w', encoding='utf8') as outfile:
-            json.dump(data, outfile, ensure_ascii=False, indent=4)
+        with open(path_to_file_update, 'w', encoding='utf-8') as f:
+            json.dump(data_update, f, indent=4, ensure_ascii=False)
