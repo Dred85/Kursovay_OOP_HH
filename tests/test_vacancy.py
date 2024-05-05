@@ -22,6 +22,15 @@ def vacancy2():
                    600000,
                    "Знание Python",
                    "2018-04-17T13:33:10+0300")
+@pytest.fixture
+def vacancy3():
+    return Vacancy("97223663",
+                   "Full stack developer (angular + java)",
+                   "https://hh.ru/vacancy/97223662",
+                   '',
+                   '',
+                   2,
+                   "2024-04-17T13:33:10+0300")
 
 
 @pytest.fixture
@@ -66,6 +75,16 @@ def test_init(vacancy1):
     assert vacancy1.requirements == "Знание Python"
     assert vacancy1.published_at == "2024-04-17T13:33:10+0300"
 
+def test_init_zero(vacancy3):
+    """Тестирую конструктор класса дандер метод __init__, если не указаны:salary_from, salary_to и  """
+    assert vacancy3.id == "97223663"
+    assert vacancy3.name == "Full stack developer (angular + java)"
+    assert vacancy3.link_to_vacancy == "https://hh.ru/vacancy/97223662"
+    assert vacancy3.salary_from == 0
+    assert vacancy3.salary_to == 0
+    assert vacancy3.requirements == ""
+    assert vacancy3.published_at == "2024-04-17T13:33:10+0300"
+
 
 def test_str(vacancy1):
     """Тестирую переопределенный дандер метод __str__"""
@@ -84,17 +103,17 @@ def test_repr(vacancy1):
 
 
 def test_lt(vacancy1, vacancy2):
-    """Тестирую переопределенный дандер метод __lt__"""
+    """Тестирую переопределенный дандер метод __lt__ c двумя экземплярами класса"""
     assert vacancy1 < vacancy2
 
 
 def test_lt_int(vacancy1):
-    """Тестирую переопределенный дандер метод __lt__"""
+    """Тестирую переопределенный дандер метод __lt__ с числом"""
     assert (vacancy1 < 10) == False
 
 
 def test_lt_raise(vacancy1):
-    """Тестирую переопределенный дандер метод __lt__"""
+    """Тестирую переопределенный дандер метод __lt__ со строкой(д.б. исключение TypeError)"""
     with pytest.raises(TypeError) as e_info:
         vacancy1 < '10'
 
