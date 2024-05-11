@@ -14,7 +14,7 @@ def user_interaction() -> None:
     # Создаю объект класса HeadHunterAPI
     hh_url = HeadHunterAPI()
 
-    # Получаю список, сформированный по ключу: profession
+    # Формирую список self.vacancies из класса HeadHunterAPI, сформированный по ключу: profession
     hh_url.load_vacancies(profession)
 
     # Создаю список экземпляров класса Vacancy
