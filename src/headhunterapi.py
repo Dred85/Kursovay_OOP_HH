@@ -1,8 +1,6 @@
 import requests
 from abc import ABC, abstractmethod
 
-from src.vacancy import Vacancy
-
 
 class Parcer(ABC):
     """Абстрактный Класс для работы с API HeadHunter"""
@@ -23,7 +21,7 @@ class HeadHunterAPI(Parcer):
         self.vacancies: list = []
         super().__init__()
 
-    def load_vacancies(self, keyword: str) -> list:
+    def load_vacancies(self, keyword: str) -> None:
         """Метод для получения данных с сайта """
         self.params['text'] = keyword
         while self.params.get('page') != 20:
@@ -31,13 +29,3 @@ class HeadHunterAPI(Parcer):
             vacancies = response.json()['items']
             self.vacancies.extend(vacancies)
             self.params['page'] += 1
-        return [
-            Vacancy(id=info['id'],
-                    name=info['name'],
-                    link_to_vacancy=info['alternate_url'],
-                    salary_from=(info.get('salary', {}) or {}).get('from', 0),
-                    salary_to=(info.get('salary', {}) or {}).get('to', 0),
-                    requirements=info['snippet']['requirement'],
-                    published_at=info['published_at'])
-            for info in response.json()['items']
-        ]
