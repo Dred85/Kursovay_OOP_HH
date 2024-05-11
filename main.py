@@ -14,8 +14,20 @@ def user_interaction() -> None:
     # Создаю объект класса HeadHunterAPI
     hh_url = HeadHunterAPI()
 
-    # Получаю список экземпляров класса Vacancy, сформированных по ключу: profession
-    list_vacancies = hh_url.load_vacancies(profession)
+    # Формирую список self.vacancies из класса HeadHunterAPI, сформированный по ключу: profession
+    hh_url.load_vacancies(profession)
+
+    # Создаю список экземпляров класса Vacancy
+    list_vacancies = [
+        Vacancy(id=info['id'],
+                name=info['name'],
+                link_to_vacancy=info['alternate_url'],
+                salary_from=(info.get('salary', {}) or {}).get('from', 0),
+                salary_to=(info.get('salary', {}) or {}).get('to', 0),
+                requirements=info['snippet']['requirement'],
+                published_at=info['published_at'])
+        for info in hh_url.vacancies
+    ]
 
     # Записываю все вакансии в JSON файл
     JSONSaver.add_json(list_vacancies)
